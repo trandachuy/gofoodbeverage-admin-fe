@@ -1,0 +1,32 @@
+
+.badge-status {
+    border-radius: 16px;
+    min-height: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-flex;
+    span {
+        margin: auto;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+.badge-status.active {
+    background-color: rgba(51, 181, 48, 0.1);
+    span {
+        color: #33b530;
+    }
+}
+
+.badge-status.default {
+    background: rgba(255, 140, 33, 0.1);
+    span {
+        color: #ff8c21;
+    }
+}

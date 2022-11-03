@@ -1,0 +1,84 @@
+.modal-component {
+    .ant-modal-content {
+        border-radius: 40px;
+
+        .ant-modal-header {
+            height: 96px;
+            border-radius: 40px 40px 0px 0px;
+            background-color: #50429B;
+            padding: 28px 0px 28px 32px;
+        
+            .ant-modal-title {
+              font-family: 'Plus Jakarta Sans';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 40px;
+              color: #FFFFFF;
+              text-align: left;
+              text-transform: capitalize;
+            }
+        }
+        .ant-modal-body {
+            padding: 33px 30px;
+        }
+        .ant-modal-footer {
+            text-align: center;
+            border-top: none;
+            padding-bottom: 37px;
+        }
+        .ant-btn {
+            height: 60px;
+            border-radius: 16px;
+        }
+        .ant-btn.ant-btn-default {
+            border: 1px solid #A5ABDE;
+            color: #A5ABDE;
+            margin-right: 15px;
+        }
+        .ant-btn.ant-btn-primary {
+            margin-left: 15px;
+        }
+    }
+  
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .ant-card-head {
+    border: none;
+    outline: none;
+  }
+}
+
+//<-- Begin Mobile
+@media (max-width: 740px) {
+    .modal-component {
+        .ant-modal-content {
+            border-radius: 30px;
+
+            .ant-modal-header {
+                height: 80px;
+                border-radius: 30px 30px 0px 0px;
+
+                .ant-modal-title {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+            .ant-modal-body {
+                padding: 24px 20px;
+            }
+            .ant-modal-footer {
+                padding-bottom: 32px;
+            }
+            .ant-btn {
+                font-size: 16px;
+                line-height: 24px;
+                height: 48px;
+            }
+        }
+    }
+}
+//--> End Mobile

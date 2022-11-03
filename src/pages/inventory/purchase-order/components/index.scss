@@ -1,0 +1,319 @@
+.w-150 {
+  width: 150px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-status {
+  display: block;
+  padding: 5px 30px;
+  color: white !important;
+  border-radius: 10px;
+}
+
+.fnb-text-area {
+  height: 190px !important;
+}
+
+.title-group {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-material-information {
+  width: 100%;
+
+  .ant-select-selector {
+    border-radius: 16px !important;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
+    background: #ffffff !important;
+    height: 60px !important;
+
+    .ant-select-selection-search {
+      .ant-select-selection-search-input {
+        height: 60px !important;
+        font-size: 18px !important;
+        padding-left: 5px !important;
+      }
+    }
+
+    .ant-select-selection-placeholder {
+      line-height: 60px !important;
+      font-size: 18px !important;
+      padding-left: 5px !important;
+    }
+
+    .ant-select-selection-item {
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 18px !important;
+      line-height: 60px !important;
+      letter-spacing: 0.3px !important;
+      color: #000000 !important;
+      padding-left: 5px !important;
+    }
+  }
+
+  .ant-select-arrow {
+    user-select: all !important;
+    padding-right: 5px !important;
+  }
+}
+
+#material-list {
+  .ant-table-container {
+    .ant-table-content {
+      table {
+        .ant-table-tbody {
+          max-height: calc(96px * 5) !important;
+        }
+      }
+    }
+  }
+}
+
+.popup-confirm-leave-PO {
+  .ant-modal-content {
+    border-radius: 40px;
+
+    .ant-modal-header {
+      border-radius: 40px 40px 0 0;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ecf1f9;
+
+      .ant-modal-title {
+        font-size: 32px;
+        font-weight: 600;
+        color: #50429b;
+      }
+    }
+
+    .ant-modal-footer {
+      text-align: center;
+      border-top: unset !important;
+
+      .ant-btn-primary {
+        background: #fc0d1b;
+      }
+
+      .ant-btn-default {
+        background: #ffffff;
+        color: #a5abde;
+        border: 1px solid !important;
+      }
+    }
+  }
+}
+
+.margin-add-button {
+  margin-bottom: 32px;
+}
+
+.status {
+  background: rgba(51, 181, 48, 0.1);
+  margin: auto;
+  border-radius: 16px;
+  width: 128px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  justify-content: center;
+}
+
+.table-text-supplier-overflow {
+  max-width: 264px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-text-branch-overflow {
+  max-width: 286px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-text-createdBy-overflow {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tooltip-content {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.btn-filter-purchase-order {
+  width: 100% !important;
+  border: none !important;
+  border-color: #ffffff !important;
+  border-radius: 12px !important;
+  background-color: #ffffff !important;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
+
+  .text-filter {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 12px;
+    float: left;
+    color: #50429b;
+    font-style: normal;
+    font-family: "Plus Jakarta Sans";
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+}
+
+.btn-filter-line-height {
+  line-height: 5px !important;
+}
+
+.btn-filter-purchase-order > svg {
+  float: left;
+}
+
+.icon-add-purchase-order {
+  margin-right: 12px;
+}
+
+@media (max-width: 480px) {
+  .btn-filter-resize {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+    float: right;
+    margin-left: 10px;
+
+    .hide-text {
+      display: none;
+    }
+  }
+
+  .btn-filter-calendar-resize {
+    width: calc(100% - 70px) !important;
+    float: right;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .btn-filter-resize {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+    float: right;
+    margin-left: 10px;
+
+    .hide-text {
+      display: none;
+    }
+  }
+
+  .btn-filter-calendar-resize {
+    width: calc(100% - 70px) !important;
+    float: right;
+  }
+
+  .margin-filter-row {
+    margin-top: -6px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 920px) {
+  .btn-filter-resize {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+    float: right;
+    margin-left: 10px;
+
+    .hide-text {
+      display: none;
+    }
+  }
+
+  .btn-filter-calendar-resize {
+    width: calc(100% - 70px) !important;
+    float: right;
+  }
+
+  .margin-filter-row {
+    margin-top: -6px;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1024px) {
+  .btn-filter-resize {
+    width: 122px !important;
+    min-width: 122px !important;
+    float: right;
+  }
+
+  .btn-filter-calendar-resize {
+    width: 122px !important;
+    min-width: 122px !important;
+    float: right;
+    margin-right: 22px;
+  }
+
+  .margin-filter-row {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .btn-filter-resize {
+    width: 122px !important;
+    min-width: 122px !important;
+    float: right;
+  }
+
+  .btn-filter-calendar-resize {
+    width: 122px !important;
+    min-width: 122px !important;
+    float: right;
+    margin-right: 22px;
+  }
+
+  .margin-filter-row {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .btn-filter-resize {
+    width: 122px !important;
+    min-width: 122px !important;
+    float: right;
+  }
+
+  .btn-filter-calendar-resize {
+    width: 122px !important;
+    min-width: 122px !important;
+    float: right;
+    margin-right: 22px;
+  }
+
+  .margin-filter-row {
+    margin-top: 8px;
+  }
+}

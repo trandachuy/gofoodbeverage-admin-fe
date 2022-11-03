@@ -1,0 +1,345 @@
+@mixin media-breakpoint($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+.report-widget-summary {
+  .group-information-summary {
+    height: 397px;
+    max-width: 394px;
+    background-image: url("/assets/images/background-summary.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+
+    .summary-icon {
+      width: 104px;
+      height: 104px;
+      margin: 43px auto 41px;
+    }
+
+    .summary-name {
+      font-weight: 700;
+      font-size: 24px;
+      color: #50429b;
+      margin-bottom: 14px;
+    }
+
+    .summary-compare {
+      font-weight: 400;
+      font-size: 18px;
+      color: #50429b;
+      margin: 0px 10px 24px 10px;
+      text-align: center;
+
+      .percent-compare {
+        font-weight: 700;
+      }
+
+      .icon-increase-triangle {
+        margin-right: 10px;
+      }
+    }
+
+    .summary-total {
+      font-weight: 800;
+      font-size: 32px;
+      color: #50429b;
+    }
+  }
+}
+
+.report-widget-revenue {
+  .group-information-revenue {
+    background-image: url("/assets/images/background-profit.png");
+    max-width: 772px;
+    height: 284px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+
+    .revenue-left-col {
+      display: flex;
+      flex-direction: column;
+      width: calc(742px / 2);
+      justify-content: space-between;
+
+      .revenue-left-header {
+        display: flex;
+        flex-direction: column;
+
+        .revenue-name {
+          font-weight: 700;
+          font-size: 24px;
+          color: #cdc6ff;
+          margin: 26px 0px 0px 30px;
+        }
+
+        .revenue-total {
+          font-weight: 700;
+          font-size: 32px;
+          color: #ffffff;
+          margin: 0px 0px 0px 30px;
+        }
+      }
+
+      .revenue-left-footer-col {
+        margin: 0px 0px 36px 30px;
+        display: flex;
+
+        .revenue-received-info {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 0px 0px 25px;
+          justify-content: center;
+
+          .revenue-received-name {
+            font-weight: 400;
+            font-size: 20px;
+            color: #ffffff;
+          }
+
+          .revenue-received-total {
+            font-weight: 700;
+            font-size: 20px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .revenue-right-col {
+      display: flex;
+      flex-direction: column;
+      width: calc(742px / 2);
+      justify-content: space-between;
+
+      .revenue-compare {
+        font-weight: 400;
+        font-size: 18px;
+        color: #ffffff;
+        margin: 32px 21px 0px 0px;
+        text-align: right;
+
+        .icon-increase-triangle {
+          margin-right: 10px;
+        }
+      }
+
+      .revenue-right-footer-col {
+        margin: 0px 0px 36px 30px;
+        display: flex;
+
+        .revenue-received-info {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 0px 0px 25px;
+          justify-content: center;
+
+          .revenue-received-name {
+            font-weight: 400;
+            font-size: 20px;
+            color: #ffffff;
+          }
+
+          .revenue-received-total {
+            font-weight: 700;
+            font-size: 20px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.c-revenue-pie-chart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .rpc-element {
+    // flex  : 0 1 14px;
+    margin-top: 1rem;
+    height: 480px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 760px;
+    }
+
+    .rpc-element-wrapper {
+      max-width: 755px;
+      width: 755px;
+      height: 100%;
+      padding: 35px;
+      position: relative;
+    }
+  }
+}
+
+.c-chard {
+  width: 100%;
+  height: 100%;
+
+  &--scroll {
+    overflow-y: scroll;
+  }
+
+  .title-chart {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    padding-bottom: 15px;
+
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #2b2162;
+  }
+
+  .cc-wrapper {
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .ccw-table {
+    &--chart {
+      min-width: 298.24px;
+      display: flex;
+      align-items: center;
+    }
+
+    &--table {
+      max-width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--full {
+      width: 100%;
+    }
+  }
+
+  .ccw-table-row {
+    padding: 0.5rem;
+    width: 100%;
+
+    .li-style {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .ccw-table-cell {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.5rem;
+
+      .name {
+        min-width: 140px;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+      }
+
+      .value {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 0.5rem;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+
+        &:first-child {
+          width: 50%;
+        }
+
+        &:last-child {
+          width: 50%;
+        }
+      }
+    }
+
+    .ccwtw {
+      width: 100%;
+    }
+  }
+
+  .ant-table table {
+    max-width: 100% !important;
+  }
+
+  .ant-table-thead {
+    height: 32px;
+  }
+
+  .ant-table-row {
+    height: 32px;
+  }
+
+  @include media-breakpoint(860px) {
+    .cc-wrapper {
+      flex-direction: column;
+
+      .ccw-table-row {
+        padding: 0;
+      }
+      .ccw-table {
+        &--chart {
+          justify-content: center;
+        }
+        &--table {
+          width: 100%;
+          margin: auto;
+          .value {
+            min-width: fit-content;
+          }
+          .ccw-table-cell {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

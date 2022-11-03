@@ -1,0 +1,25 @@
+.modal-add-language {
+    .ant-modal-header {
+        text-align: center;
+        .ant-modal-title {
+            font-size: 22px;
+        }
+    }
+    .ant-modal-footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.flag-icon {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.width-100 {
+    width: 100px;
+}
+
+.width-120 {
+    width: 120px;
+}

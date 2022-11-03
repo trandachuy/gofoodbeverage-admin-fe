@@ -1,0 +1,340 @@
+.product-report-summary {
+  display: inline-flex;
+
+  .description-report {
+    margin-top: 15px;
+    display: inline-flex;
+
+    svg,
+    div {
+      margin: auto 0;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    .label {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: #50429b;
+
+      p {
+        margin-bottom: 0;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .description-summary {
+    clear: both;
+    display: block;
+    padding-bottom: 50px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    align-items: center;
+    letter-spacing: 0.3px;
+    color: #000000;
+
+    div:first-child {
+      float: left;
+    }
+    div:last-child {
+      float: right;
+    }
+  }
+
+  .no-data {
+    margin: auto;
+    height: 100%;
+    padding-top: 10%;
+  }
+
+  .total {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 21px;
+    align-items: center;
+    letter-spacing: 0.3px;
+    color: #50429b;
+  }
+
+  .product-revenue-summary {
+    display: flex;
+    height: 100%;
+  }
+
+  .summary-value {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #000000;
+  }
+
+  .chart-description-wrapper {
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    .pie-chart-report-legend {
+      .marker {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        margin-top: 3px;
+      }
+
+      .legend-name,
+      .legend-value {
+        display: inline-flex;
+
+        span {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: #000000;
+        }
+      }
+
+      .legend-value {
+        span {
+          color: #50429b;
+        }
+      }
+
+      .legend-name {
+        min-width: 150px;
+      }
+    }
+  }
+
+  .revenue {
+    background: #ffffff;
+    border-radius: 16px;
+    margin-left: 30px;
+    max-height: 479px;
+
+    .ant-card-body {
+      padding-bottom: 0;
+    }
+    .product-revenue-summary {
+      padding-right: 30px;
+    }
+  }
+
+  .product-revenue-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2b2162;
+  }
+}
+
+.top-selling-product-transaction {
+  margin-top: 40px;
+}
+
+.sold-product {
+  .cc-wrapper {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .ccw-table {
+    &--chart {
+      min-width: 298.24px;
+      display: flex;
+      align-items: center;
+    }
+
+    &--table {
+      max-width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--full {
+      width: 100%;
+    }
+  }
+
+  .ccw-table-row {
+    padding: 0.5rem;
+    width: 100%;
+
+    .li-style {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .ccw-table-cell {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.5rem;
+
+      .name {
+        min-width: 140px;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+      }
+
+      .value {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 0.5rem;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+
+        &:first-child {
+          width: 50%;
+        }
+
+        &:last-child {
+          width: 50%;
+        }
+      }
+    }
+
+    .ccwtw {
+      width: 100%;
+    }
+  }
+
+  td.ant-table-column-sort {
+    background-color: transparent;
+  }
+
+  .ant-table table {
+    max-width: 100% !important;
+  }
+
+  .ant-table-thead {
+    height: 32px;
+  }
+
+  .ant-table-row {
+    height: 32px;
+  }
+
+  .ant-table-column-sorter {
+    display: none;
+  }
+
+  .sold-product-modal-table {
+    max-height: 550px;
+    overflow-y: scroll;
+  }
+
+  .sold-product-modal-table::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .sold-product-modal-table::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+
+  .sold-product-modal-table::-webkit-scrollbar-thumb {
+    background: #50429b;
+    border-radius: 2px;
+  }
+
+  .sold-product-modal-table::-webkit-scrollbar-thumb:hover {
+    background: #817cba;
+  }
+  .table-selling-product-no {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .table-selling-product-text-no {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .table-selling-product-text-product-name {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .table-selling-product-text-no-font-size {
+    font-size: 14px;
+  }
+
+  .table-selling-product-thumbnail {
+    margin-left: 15px;
+    margin-right: 13px;
+  }
+
+  .table-header-click {
+    cursor: pointer;
+  }
+}
+
+.sold-product-report-total {
+  width: 100%;
+  height: 130px;
+  background: #fbfbfb;
+  border-radius: 16px;
+  align-items: center;
+
+  span {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #50429b;
+  }
+
+  .total-text {
+    margin-left: 44px;
+  }
+
+  .cost-text {
+    float: right;
+    margin-right: 18px;
+  }
+
+  .amount-text {
+    float: right;
+    margin-right: -2%;
+  }
+
+  .quantity-text {
+    float: right;
+    margin-right: -12%;
+  }
+}

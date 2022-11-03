@@ -1,0 +1,57 @@
+.select-address-input {
+  position: absolute !important;
+  z-index: 1;
+}
+
+.address-popover {
+  position: absolute;
+  z-index: 9999;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: auto;
+  .address-popover-item {
+    height: 74px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    .icon-box {
+      .icon-location {
+        margin-top: 15px;
+      }
+    }
+
+    .text-overflow {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .address-box {
+      margin-left: 16px;
+      margin-top: 2px;
+      .street-text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #000000;
+      }
+      .ward-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #626262;
+      }
+    }
+  }
+  .address-popover-item:hover {
+    background-color: #f7f5ff;
+    border-radius: 16px;
+  }
+}
+
+///Error empty address
+.error-address-input.fnb-input {
+  border: 1px solid #db1b1b !important;
+}

@@ -1,0 +1,38 @@
+.flex-space-between {
+  justify-content: space-between;
+
+  .ant-checkbox-wrapper {
+    align-items: center;
+    height: 100%;
+
+    span:first-child {
+      top: 0;
+    }
+
+    span:not(:first-child) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.servingTypes__container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .servingTypes__item {
+    min-width: 170px;
+  }
+
+  .ant-checkbox-wrapper {
+    margin-right: 8px;
+    margin-left: 0;
+  }
+}
+
+.d-none {
+  display: none !important;
+}

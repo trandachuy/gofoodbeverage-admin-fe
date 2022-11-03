@@ -1,0 +1,13 @@
+.top-selling-product-card-component-width {
+  width: 100%;
+  height: 659px;
+}
+
+@media only screen and (max-width: 768px) {
+  .table-selling-product-component-item-mobile {
+    position: absolute;
+    margin-left: -94px;
+    text-align: left;
+    margin-top: -8px;
+  }
+}

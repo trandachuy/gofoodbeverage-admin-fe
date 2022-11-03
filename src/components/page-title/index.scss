@@ -1,0 +1,30 @@
+
+.fnb-title-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #2b2162;
+    display: flex;
+    margin: auto;
+}
+
+.fnb-row-page-header {
+    margin-bottom: 30px;
+    margin-top: 5px;
+
+    .page-title {
+        float: left;
+        margin-right: auto;
+    }
+
+    .page-action-group {
+        float: right;
+    }
+}
+
+@media (max-width: 500px) {
+    .fnb-title-header {
+        font-size: 24px !important;
+    }
+}

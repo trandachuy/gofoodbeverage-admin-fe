@@ -1,0 +1,302 @@
+
+.page-not-found {
+    .page-background {
+        background-color: #E2E5FE;
+        background-image: url(../../assets/page-not-found/cloud.png);
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .img-background {
+        background-image: url(../../assets/page-not-found/image_min-width-1200.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: initial;
+        width: auto;
+        height: 100%;
+    }
+    
+    .box-center {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .head-text {
+        position: absolute;
+        left: 38.28%;
+        right: 45.78%;
+        top: 9.26%;
+        bottom: 77.18%;
+        
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 100px;
+        line-height: 126px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #FBFBFB;
+    }
+    
+    .exclamation-point {
+        position: absolute;
+        left: 55.51%;
+        right: 41.31%;
+        top: 3.12%;
+        bottom: 76.53%;
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 150px;
+        line-height: 189px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #FBFBFB;
+    
+        transform: rotate(14.97deg)
+    }
+    
+    .error-text {
+        position: absolute;
+        left: 38.07%;
+        right: 43.28%;
+        top: 24.43%;
+        bottom: 69.21%;
+    
+        // font-family: 'Roboto';'Plus Jakarta Sans'
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 59px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: #50429B;
+        width: fit-content;
+    }
+    
+    .message-text {
+        position: absolute;
+        left: 36.88%;
+        right: 40.89%;
+        top: 32.72%;
+        bottom: 64.05%;
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #000000;
+    }
+    
+    .button-bg { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 21px;
+        gap: 10px;
+    
+        position: absolute;
+        width: 248px;
+        left: calc(50% - 248px/2 - 41px);
+        top: 83.96%;
+        bottom: 9.58%;
+    
+        background: #50429B;
+        border-radius: 16px;
+    }
+    
+    .button-text {
+        width: 168px;
+        height: 30px;
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+
+.page-not-permitted {
+    .page-background {
+        background-color: #E2E5FE;
+        background-image: url(../../assets/page-not-found/cloud.png);
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .img-background {
+        background-image: url(../../assets/page-not-permitted/image_min-width-1200.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: initial;
+        width: auto;
+        height: 100%;
+    }
+    
+    .box-center {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .head-text {
+        position: absolute;
+        left: 38.28%;
+        right: 45.78%;
+        top: 9.26%;
+        bottom: 77.18%;
+        
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 100px;
+        line-height: 126px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #FBFBFB;
+    }
+    
+    .exclamation-point {
+        position: absolute;
+        left: 55.51%;
+        right: 41.31%;
+        top: 3.12%;
+        bottom: 76.53%;
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 150px;
+        line-height: 189px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #FBFBFB;
+    
+        transform: rotate(14.97deg)
+    }
+    
+    .error-text {
+        position: absolute;
+        left: 38.07%;
+        right: 43.28%;
+        top: 24.43%;
+        bottom: 69.21%;
+    
+        // font-family: 'Roboto';'Plus Jakarta Sans'
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 59px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: #50429B;
+        width: fit-content;
+    }
+    
+    .message-text {
+        position: absolute;
+        left: 36.88%;
+        right: 40.89%;
+        top: 32.72%;
+        bottom: 64.05%;
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #000000;
+    }
+    
+    .button-bg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 21px;
+        gap: 10px;
+    
+        position: absolute;
+        width: 248px;
+        left: calc(50% - 248px/2 - 41px);
+        top: 83.96%;
+        bottom: 9.58%;
+    
+        background: #50429B;
+        border-radius: 16px;
+    }
+    
+    .button-text {
+        width: 168px;
+        height: 30px;
+    
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}

@@ -1,0 +1,150 @@
+.group-business-order-management-width {
+  width: 354px;
+}
+
+.report-transaction-order-table {
+  min-height: 500px;
+}
+
+.order-summary-pie-chart {
+  min-height: 620px;
+
+  .pie-chart-element {
+    height: calc(700px - 25px - 20px);
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 18px 20px 24px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 760px;
+    }
+
+    .pie-chart-element-wrapper {
+        max-width: 755px;
+        height: 100%;
+        position: relative;
+    }
+  }
+}
+
+.form-filter-popover {
+  height: auto !important;
+  max-height: 560px !important;
+  width: 582px !important;
+  border-radius: 16px;
+  border: 0px;
+  overflow-y: auto;
+
+  .filter-popover-row {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .first-column {
+    width: 200px;
+    padding-right: 24px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #50429b;
+    display: flex;
+    align-items: center;
+  }
+
+  .second-column {
+    width: 333px;
+
+    .status-radio-item {
+      margin: 0px 8px 8px 0px;
+      
+    }
+  }
+
+  .second-column div.ant-radio-group > label.ant-radio-button-wrapper {
+    margin-right: 8px;
+  }
+}
+
+.order-report-detail {
+  margin-bottom: 8px;
+}
+
+.order-report-total {
+  color: #50429B;
+  margin-top: 16px;
+}
+
+.order-report-customer {
+  .order-report-customer-row {
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .order-report-customer-name > a {
+      color: #428BC1;
+    }
+    
+    .order-report-customer-rank {
+      background-color: #EFBB00;
+      border-radius: 16px;
+      padding: 7px 14px;
+      color: #fff;
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      max-width: fit-content;
+    }
+  }
+}
+
+.order-status {
+  border-radius: 16px;
+  padding: 7px 14px;
+}
+
+.new-order-color {
+  color: rgb(195, 189, 189);
+  background-color: rgba(195, 189, 189, 0.1);
+}
+
+.returned-order-color {
+  color: rgba(133, 133, 133, 1);
+  background-color: rgba(133, 133, 133, 0.1);
+}
+
+.canceled-order-color {
+  color: rgba(252, 13, 27, 1);
+  background-color: rgba(252, 13, 27, 0.1);
+}
+
+.to-confirm-order-color {
+  color: rgba(66, 139, 193, 1);
+  background-color: rgba(66, 139, 193, 0.1);
+}
+
+.processing-order-color {
+  color: rgba(255, 140, 33, 1);
+  background-color: rgba(255, 140, 33, 0.1);
+}
+
+.delivering-order-color {
+  color: rgba(80, 66, 155, 1);
+  background-color: rgba(80, 66, 155, 0.1);
+}
+
+.completed-order-color {
+  color: rgba(51, 181, 48, 1);
+  background-color: rgba(51, 181, 48, 0.1);
+}
+
+.draft-order-color {
+  color: #B3B3B3;
+  background-color: rgba(178, 178, 178, 0.1);
+}

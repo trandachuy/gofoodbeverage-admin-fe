@@ -1,0 +1,47 @@
+.fnb-image-select {
+  .non-image {
+    border: 1px dashed #9f9f9f;
+    border-radius: 16px;
+    height: 176px;
+    max-width: unset;
+    text-align: center;
+
+    .justify-left {
+      justify-content: left !important;
+    }
+
+    .image-product {
+      min-height: 50%;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      max-height: max-content !important;
+
+      .upload-image-url {
+        font-size: 18px;
+        text-decoration: underline;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .text-non-image {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: 50%;
+      width: 100%;
+      margin-top: 16px;
+      font-size: 16px;
+    }
+  }
+
+  .have-image {
+    border: unset !important;
+    border-radius: unset !important;
+    height: unset !important;
+    text-align: left;
+  }
+}

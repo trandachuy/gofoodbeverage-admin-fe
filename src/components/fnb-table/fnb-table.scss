@@ -1,0 +1,354 @@
+.fnb-table-wrapper {
+  width: 100%;
+
+  .ant-pagination-jump-prev,
+  .ant-pagination-jump-next {
+    .ant-pagination-item-link {
+      text-align: center;
+      margin: auto;
+      width: 100%;
+      .ant-pagination-item-link-icon {
+        color: #50429b;
+      }
+    }
+  }
+
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: #50429b;
+    border-color: #50429b;
+  }
+
+  .eclipse-filter {
+    width: 24px;
+    height: 24px;
+    background: #ff8c21;
+
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+
+    border-radius: 50%;
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -6px;
+    margin-right: -5px;
+
+    display: none;
+  }
+
+  .desktop-mode {
+    .button-title {
+      margin-left: 5px;
+    }
+
+    .button-title-calendar {
+      margin-left: 5px;
+    }
+
+    .btn-clear-filter {
+      margin-left: 5px;
+    }
+  }
+
+  .default-mode {
+    display: none;
+  }
+
+  .desktop-mode {
+    display: flex;
+  }
+
+  .row {
+    flex-flow: row wrap;
+  }
+
+  .row-reverse {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
+  .fnb-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: #ff8c21;
+  }
+
+  .fnb-select-single {
+    min-width: 210px;
+    width: auto;
+  }
+
+  .fnb-search-input {
+    max-width: 471px;
+    width: auto;
+    border: none;
+  }
+
+  .action-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #50429b;
+    min-width: 122px;
+    width: auto;
+    height: 60px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    border-color: #ffffff;
+    border-radius: 12px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+
+    svg,
+    span {
+      margin: auto;
+    }
+  }
+
+  .search-bar {
+    min-width: 471px;
+    width: 471px;
+  }
+
+  .action-button:hover,
+  .action-button:focus {
+    color: #50429b;
+  }
+
+  .action-group {
+    width: 100%;
+  }
+}
+
+.fnb-tbl-pagination {
+  width: 100%;
+  display: flex;
+  margin-top: 32px;
+
+  .info-pagination {
+    display: flex;
+    width: 50%;
+
+    p {
+      text-indent: 3px;
+    }
+
+    .table-text-footer {
+      display: flex;
+      font-size: 18px;
+      color: #000000;
+      line-height: 24px;
+      font-family: "Plus Jakarta Sans";
+      font-weight: 400;
+    }
+
+    .record {
+      color: #50429b;
+      font-weight: 700;
+      padding-right: 3px;
+    }
+  }
+
+  .fnb-pagination {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+
+    li {
+      background: #fbfbfb;
+      border-radius: 16px;
+      width: 45px;
+      height: 44px;
+      display: inline-flex;
+
+      button {
+        background: #fbfbfb;
+        border-radius: 16px;
+        width: 45px;
+        height: 44px;
+      }
+    }
+
+    .ant-pagination-item,
+    .ant-pagination-item-active {
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        margin: auto;
+      }
+    }
+
+    .ant-pagination-item {
+      a {
+        color: #2c2c2c;
+      }
+    }
+
+    .ant-pagination-item:hover {
+      border-color: #817cba;
+      background: #817cba;
+
+      a {
+        color: #ffffff;
+      }
+    }
+
+    .ant-pagination-item-active {
+      background: #50429b;
+      border-color: #50429b;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.fnb-table {
+  .action-button-space {
+    margin-right: 25px;
+  }
+
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: #50429b !important;
+    border-color: #50429b !important;
+  }
+}
+
+@media (max-width: 374px) {
+  .fnb-table-wrapper {
+    .action-group {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .desktop-mode {
+    display: none !important;
+  }
+
+  .default-mode {
+    display: flex !important;
+    flex-direction: column;
+    .select-bar-action-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .fnb-card {
+    .ant-card-body {
+      padding: 15px;
+    }
+  }
+
+  .fnb-table-wrapper {
+    .eclipse-filter {
+      display: block;
+    }
+
+    .action-button {
+      width: 44px;
+      padding: 0;
+      min-width: 44px;
+      height: 44px;
+
+      svg {
+        margin: 0;
+        width: 28px;
+        height: 28px;
+      }
+
+      .fnb-icon {
+        margin-top: 5px;
+      }
+    }
+
+    .action-button-calendar {
+      width: 225px;
+      padding: 0;
+      min-width: 225px;
+      height: 44px;
+      justify-content: left;
+      padding-left: 13px;
+    }
+
+    .action-button-calendar-component {
+      padding: 0;
+      justify-content: left;
+      padding-left: 13px;
+    }
+
+    .button-title,
+    .btn-clear-filter {
+      display: none !important;
+    }
+
+    .button-title-calendar {
+      margin-left: 10px !important;
+    }
+
+    .search-bar {
+      min-width: 100%;
+      width: 100%;
+      margin-bottom: 15px;
+      height: 44px;
+
+      .fnb-search-input {
+        height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .action-group {
+      width: auto;
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+
+    .action-button {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    .action-button-calendar {
+      margin-left: 0px;
+    }
+
+    .fnb-select-single {
+      min-width: 180px;
+      margin-right: 5px;
+    }
+  }
+
+  .filter-component {
+    left: 4px !important;
+    top: 139px !important;
+  }
+}
+
+.hide-pagination-options {
+  .ant-pagination-options {
+    display: none !important;
+  }
+}

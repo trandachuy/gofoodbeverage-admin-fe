@@ -1,0 +1,68 @@
+
+.modal-notification {
+    .ant-modal-content {
+        background-color: #fff;
+        border-radius: 40px;
+
+        .ant-modal-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 50px;
+                color: #50429B;
+                text-align: center;
+            }
+            .dear-text {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: #000;
+                text-align: center;
+            }
+            .your-text {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                color: #000;
+                text-align: center;
+            }
+            .please-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 36px;
+                color: #000;
+                text-align: center;
+            }
+            .contact-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25px;
+                color: #000;
+                text-align: center;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+            .activate-account-btn {
+                background-color: #FF8C21;
+                border-radius: 16px;
+                color: #fff;
+                margin: 9px auto 12px;
+            }
+        }
+    }
+}
+@media (max-width: 740px) {
+
+}

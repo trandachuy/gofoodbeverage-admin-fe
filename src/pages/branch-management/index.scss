@@ -1,0 +1,236 @@
+.title-branch {
+  color: #2b2162;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  font-style: "normal";
+  font-family: "Plus Jakarta Sans";
+}
+
+.fnb-branches {
+  .header {
+    display: flex;
+
+    .div-title {
+      width: 50%;
+    }
+
+    .div-add-new {
+      width: 50%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+  .btn-add {
+    display: flex;
+    width: 160px;
+    height: 60px;
+    border-radius: 16px;
+    align-items: center;
+    background-color: #ff8c21;
+    padding: 12px 16px;
+
+    .icon-add {
+      height: 28px;
+      width: 28px;
+      border-radius: 4px;
+      margin-right: 12px;
+    }
+  }
+
+  .text-name {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .text-overflow {
+    width: 484px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .text-addressInfo {
+    font-size: 16px;
+    color: #858585;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .div-active {
+    width: 79px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: rgba(51, 181, 48, 0.1);
+
+    .text-active {
+      font-size: 18px;
+      color: #33b530;
+      font-weight: 500;
+      line-height: 23px;
+      font-style: normal;
+      font-family: "Plus Jakarta Sans";
+    }
+  }
+
+  .div-inactive {
+    width: 99px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: rgba(255, 140, 33, 0.1);
+
+    .text-inactive {
+      font-size: 18px;
+      color: #ff8c21;
+      font-weight: 500;
+      line-height: 23px;
+      font-style: normal;
+      font-family: "Plus Jakarta Sans";
+    }
+  }
+}
+.link-back-page > button {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #868686;
+}
+
+//#region xl: '(min-width: 1200px)',
+/// Apply this class to the body to make it responsive to the screen size <= xl
+@media (max-width: 1200px) {
+}
+/// Apply this class to the body to make it responsive to the screen size >= xl
+@media (min-width: 1200px) {
+  .fnb-branches .header {
+    display: flex;
+  }
+
+  .fnb-tbl-pagination {
+    display: flex;
+  }
+}
+//#endregion
+
+//#region xxl: '(min-width: 1600px)',
+@media (max-width: 1600px) {
+  .title-branch {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .fnb-branches .header {
+    display: contents;
+    .div-title {
+      width: 100%;
+    }
+
+    .div-add-new {
+      width: 100%;
+      justify-content: flex-start;
+      .btn-add {
+        display: flex;
+        width: 125px;
+        height: 48px;
+
+        .icon-add {
+          height: 12px;
+          width: 12px;
+          border-radius: 4px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  .fnb-tbl-pagination {
+    display: block;
+
+    .info-pagination {
+      width: 100%;
+
+      .text-info {
+        font-size: 14px;
+      }
+    }
+
+    .fnb-pagination {
+      width: 100%;
+      justify-content: flex-start;
+      .ant-pagination-prev,
+      .ant-pagination-next,
+      .ant-pagination-item-link,
+      .ant-pagination-item {
+        width: 33px;
+        height: 33px;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+//#endregion
+
+.branch-google-map-container {
+  width: 100%;
+  height: 100%;
+  min-height: 310px;
+  max-width: 725px;
+  border-radius: 12px;
+  background: #f7f5ff;
+  position: relative;
+  .google-map-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  .input-address {
+    max-width: 678px !important;
+    width: 100% !important;
+    margin: 24px 24px 0 24px !important;
+  }
+  .input-address-popover {
+    max-width: 678px !important;
+    width: 100% !important;
+    margin: 86px 24px;
+    max-height: 300px;
+
+    .input-address-text-overflow {
+      width: 600px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .branch-google-map-container {
+    .input-address {
+      margin: 16px 16px 0 16px !important;
+      max-width: 272px !important;
+    }
+
+    .input-address-popover {
+      height: 70%;
+      margin: 65px 16px;
+      max-width: 272px !important;
+      .input-address-text-overflow {
+        width: 550px;
+      }
+    }
+  }
+}

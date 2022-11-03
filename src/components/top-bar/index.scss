@@ -1,0 +1,223 @@
+@import "/src/stylesheets/variable.scss";
+
+.ant-drawer-body {
+    position: relative;
+}
+
+.menu ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light {
+    width: 100% !important;
+}
+
+.menu ul li.ant-menu-item {
+    padding-left: 12px !important;
+}
+
+.menu ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light>li.ant-menu-submenu.ant-menu-submenu-inline {
+    margin: 24px 12px !important;
+    width: auto !important;
+}
+
+//Home
+.menu ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light>li.ant-menu-item {
+    width: auto !important;
+}
+
+.menu.menu-mobile {
+    overflow-y: scroll;
+    max-height: 100%;
+    padding-bottom: 105px;
+}
+
+.trigger-footer-mobile {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.settings-mobile {
+    background-color: #F7F5FF;
+    height: 57px !important;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #50429b;
+    font-size: 20px;
+    margin: 24px;
+
+    .icon-setting {
+        svg>path {
+            fill: #50429B;
+        }
+
+        display: flex;
+        margin-right: 10px;
+    }
+}
+
+.account-popover-content {
+    .log-out-border {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        font-family: 'Plus Jakarta Sans';
+
+        .avt-menu-icon {
+            margin-top: 12px !important;
+            margin-right: 18px !important;
+        }
+
+        padding-left: 30px !important;
+    }
+
+    .manage-account {
+        margin-top: 5px !important;
+
+        .avt-staff-icon {
+            margin-top: 10px !important;
+            margin-right: 18px !important;
+        }
+
+        padding-left: 30px !important;
+    }
+
+    .manage-account>a {
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        font-family: 'Plus Jakarta Sans';
+    }
+
+    .log-out-border>a {
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        font-family: 'Plus Jakarta Sans';
+    }
+
+    hr {
+        border: 1px solid #DBD6FF;
+    }
+
+    width: 405px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding-bottom: 0 !important;
+    border-radius: 16px;
+}
+
+.avatar-account-popover {
+    .header-avatar {
+        cursor: pointer;
+    }
+
+    .header-avatar .ant-avatar.ant-avatar-circle {
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        background: $color-light-purple-1;
+        width: 100px;
+        height: 100px;
+        font-size: large;
+    }
+
+    .avatar-popover {
+        margin: auto;
+        margin-top: 12px;
+    }
+
+    .avatar-infor {
+        text-align: center;
+    }
+
+    .store-info {
+        .account-store-name>svg {
+            margin-left: 16px;
+            margin-top: 5px;
+        }
+
+        .account-store-name>span {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            color: #50429B;
+            margin-left: 58px;
+            margin-top: -54px !important;
+            position: absolute;
+        }
+
+        .account-store-address {
+            .paragraph-style {
+                max-width: 310px;
+            }
+
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .account-store-address>div {
+            margin-left: 58px !important;
+            margin-top: -50px !important;
+        }
+
+
+        .account-store-address>span {
+            margin-left: 58px !important;
+            margin-top: -10px !important;
+            position: absolute;
+        }
+
+        background: #F7F5FF;
+        border-radius: 16px;
+        width: 377px;
+        height: 102px;
+        margin-left: 15px !important;
+        margin-top: 18px !important;
+    }
+
+    .account-name {
+        font-family: "Plus Jakarta Sans";
+        font-weight: 700;
+        font-size: 24px;
+        color: #50429B;
+        margin-top: -15px !important;
+    }
+
+    .account-email {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #676767;
+        margin-top: -28px !important;
+    }
+
+    padding-bottom: 0 !important;
+}
+
+@media (max-width: 500px) {
+
+    .avatar-top-bar {
+        .ant-popover-inner {
+            margin-right: 10px;
+            width: 356px;
+        }
+    }
+
+    .avatar-account-popover {
+        .store-info {
+            width: 328px;
+        }
+    }
+
+    .account-popover-content {
+        width: 356px;
+    }
+}

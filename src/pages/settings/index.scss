@@ -1,0 +1,32 @@
+.card-body-bottom-0 {
+  .ant-card-body {
+    padding-bottom: 0;
+  }
+}
+
+.card-collapse-header {
+  .ant-collapse-header-text {
+    width: 100%;
+  }
+}
+
+.ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+.ant-tabs-tab {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  letter-spacing: 0.3px;
+  color: #50429b;
+}
+
+.settings-tabs .ant-tabs-nav-list {
+  width: 100%;
+  justify-content: space-between;
+}

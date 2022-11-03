@@ -1,0 +1,146 @@
+.revenue-order-chart {
+  width: 100%;
+  height: 100%;
+
+  .revenue-order-chart-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .header-chart-detail {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      color: #2b2162;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      .back-to-icon {
+        font-size: 20px;
+      }
+      .back-to-icon:hover {
+        cursor: pointer;
+      }
+
+      .pie-chart-title {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #2b2162;
+      }
+
+      .pie-chart-title-detail {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: right;
+        color: #50429b;
+      }
+      .pie-chart-title-detail:hover {
+        cursor: pointer;
+      }
+    }
+
+    .pie-chart-content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .table-chart-detail {
+      overflow-y: auto;
+      table {
+        width: 100% !important;
+      }
+      table > tr > td {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0 16px;
+      }
+      table > tr > td:nth-child(2) {
+        text-align: right;
+      }
+    }
+
+    .customer-report-pie-chart {
+      width: 90%;
+    }
+
+    .no-data {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.customer-pie-chart{
+  .pie-chart-content{
+    .order-report-pie-chart{
+      .fnb-pie-chart{
+        height: 100%;
+      }
+    }
+  }
+}
+
+.height-100{
+  height: 100%;
+}
+
+.display-center{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.legend-name{
+  display: grid;
+}
+
+.information-customer-report{
+  width: 100%;
+  .content-chart-information{    
+    width: 100%;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    .plat-form-name{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: 50%;
+      .dot-platform{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+      }
+      .dot-platform-name{
+        padding-left: 12px;
+      }
+    }
+    .total-customer-value{
+      text-align: center;
+
+    }
+    .percent-value{
+      width: 25%;
+      text-align: right;
+    }
+  }
+}
+
+.padding-top{
+  padding-top: 24px;
+}

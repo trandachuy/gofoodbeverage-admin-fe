@@ -1,0 +1,83 @@
+
+@media (max-width: 576px) {
+    .form-row {
+        margin-bottom: 0px;
+        row-gap: 30px !important;
+        .ant-row {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        .last-item {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .last-row {
+        margin-top: 25px;
+    }
+
+    .form-gender {
+        .ant-radio-group {
+            label {
+                margin-bottom: 25px;
+                display: block;
+                padding-left: 0px !important;
+            }
+
+            label:last-child {
+                margin-bottom: 15px;
+            }
+        }
+
+        height: auto !important;
+        margin-top: 30px;
+    }
+}
+
+.checkBox-margin {
+     margin-top: 34px;
+ }
+
+ .note {
+    textarea {
+        min-height: 197px !important;
+    }
+ }
+
+ .btn-add {
+    min-width: 109px !important;
+ }
+
+ .title-group {
+    margin-top: 10px;
+    margin-bottom: 30px;
+ }
+
+ .fnb-input-with-count .ant-input-suffix{
+    line-height: 21px !important;
+ }
+
+ .form-row {
+    margin-bottom: 10px;
+ }
+
+.fnb-card {
+ .ant-card-body {
+    padding-bottom: 10px;
+ }
+}
+
+.form-gender {
+    display: block;
+    height: 60px;
+
+    .ant-form-item-control{
+        margin: auto;
+    }
+}
+
+.last-gender-option {
+    padding-left: 80px !important;
+}
+

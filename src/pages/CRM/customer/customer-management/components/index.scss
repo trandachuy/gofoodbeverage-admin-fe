@@ -1,0 +1,28 @@
+.membership-rank {
+    padding: 4px 14px;
+    height: 37px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.table-text-membership-name-overflow {
+    max-width: 393px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.membership-no-rank-margin {
+    margin-bottom: 10px;
+}
+
+.membership-rank-margin {
+    margin-bottom: -13px;
+}
+
+
+.membership-rank-title-margin {
+    margin-top: 9px;
+}

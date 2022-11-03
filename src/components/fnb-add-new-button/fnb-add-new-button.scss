@@ -1,0 +1,12 @@
+.fnb-add-new-button {
+  display: flex !important;
+  svg,
+  span {
+    margin: auto;
+  }
+  span {
+    margin-left: 8px;
+  }
+
+  min-width: auto !important;
+}

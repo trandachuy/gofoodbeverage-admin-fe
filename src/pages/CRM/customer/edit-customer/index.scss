@@ -1,0 +1,235 @@
+.btn-add-product.ant-btn-primary,
+.btn-edit-customer {
+  width: 133px;
+  height: 60px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  min-width: unset !important;
+  .icon-btn-edit-customer {
+    margin-right: 12px;
+  }
+}
+.customer-edit-card {
+  background: #ffffff;
+  border-radius: 12px;
+
+  .title-session {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+    padding-right: 27px;
+
+    span {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #000000;
+    }
+  }
+
+  .left-card {
+    background: #f9f8ff;
+    border-radius: 40px;
+    max-width: 453px;
+    height: 97%;
+    margin-left: 27px;
+
+    .left-card-image {
+      padding: 44px 32px 0px 32px;
+      display: flex;
+      justify-content: center;
+
+      .image-container {
+        background: #eeecff;
+        border-radius: 40px;
+        height: 171px;
+        width: 171px;
+      }
+    }
+
+    .info-container {
+      margin: 42px 32px 0px 32px;
+      max-width: 389px;
+      height: 200px;
+
+      .text-left {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+      }
+
+      .rank-box {
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .rank-badge {
+          margin-left: auto;
+          min-width: 0;
+          height: 40px;
+          border-radius: 16px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 32px;
+          display: flex;
+          align-items: center;
+          padding: 22px;
+          color: #ffffff;
+        }
+      }
+
+      .other-info-box {
+        .reward {
+          padding-top: 23px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .reward-point {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #000000;
+          }
+        }
+
+        .total {
+          padding-top: 23px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 0px;
+          padding-top: 32px;
+
+          .total-amount {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  .detail-container-left {
+    padding-left: 54px;
+  }
+
+  .detail-container-right {
+    padding-left: 24px;
+  }
+
+  .text-label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #9f9f9f;
+    margin-bottom: 8px;
+  }
+
+  .text-detail {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+}
+
+.customer-edit-card-right-padding {
+  padding-right: 27px;
+}
+
+.btn-edit-customer-edit {
+  min-width: 99px !important;
+}
+
+.btn-edit-customer-cancel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #50429b;
+  margin-right: 24px;
+}
+
+.btn-edit-customer-delete {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #db1b1b;
+  margin-right: 24px;
+}
+
+.form-gender-customer-edit {
+  display: block;
+  height: 60px;
+
+  .ant-form-item-control {
+    margin: auto;
+  }
+}
+
+.last-gender-option-customer-edit {
+  padding-left: 80px !important;
+}
+
+@media (max-width: 500px) {
+  .customer-edit-card {
+    .title-session {
+      display: none;
+    }
+
+    .left-card {
+      height: 100%;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .info-container {
+      height: 232px !important;
+    }
+  }
+
+  .customer-edit-card-general-mobile {
+    background: #ffffff;
+    border-radius: 16px;
+  }
+
+  .customer-edit-card-right-padding {
+    padding-left: 27px;
+  }
+
+  .last-gender-option-customer-edit {
+    padding-left: 0px !important;
+    padding-top: 22px !important;
+  }
+
+  .customer-edit-general-title {
+    margin-top: 47px;
+  }
+}
+
+@media (min-width: 501px) {
+  .customer-edit-general-title {
+    display: none;
+  }
+}

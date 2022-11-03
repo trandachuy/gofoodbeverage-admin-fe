@@ -1,0 +1,292 @@
+.grid-text-column {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+
+  .text-overflow-name {
+    width: 410px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .text-overflow-email {
+    width: 352px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.grid-code-column {
+  a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #428bc1;
+    text-transform: uppercase;
+  }
+}
+
+//View supplier detail
+.supplier-detail-header-box {
+  height: 92px;
+  display: flex;
+
+  .name-box {
+    .supplier-name {
+      text-transform: capitalize;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #2b2162;
+    }
+    .go-back-text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      color: #868686;
+    }
+  }
+
+  .btn-box {
+    margin-left: auto;
+
+    .btn-edit {
+      min-width: 83px !important;
+    }
+
+    .btn-delete {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      color: #db1b1b;
+      margin-right: 24px;
+    }
+  }
+}
+
+.supplier-detail-card {
+  background: #ffffff;
+  border-radius: 12px;
+
+  .title-session {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    span {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #000000;
+    }
+  }
+
+  .text-container {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .text-label {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #9f9f9f;
+      margin-bottom: 8px;
+    }
+
+    .text-detail {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #000000;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.responsive-layout {
+  .supplier-detail-header-box {
+    display: contents;
+
+    .name-box {
+      .supplier-name {
+        text-transform: capitalize;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #2b2162;
+      }
+      .go-back-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #868686;
+      }
+    }
+
+    .btn-box {
+      float: right;
+      .btn-delete {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .btn-edit {
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .supplier-detail-card {
+    background: #ffffff;
+    border-radius: 16px;
+    margin-top: 18px;
+    padding-bottom: 20px;
+
+    .title-session {
+      height: 61px;
+      display: flex;
+      align-items: center;
+      padding-left: 18px;
+      padding-right: 18px;
+
+      span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+      }
+    }
+
+    .text-container {
+      padding-left: 18px;
+      padding-right: 18px;
+
+      .text-label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #9f9f9f;
+        margin-bottom: 8px;
+      }
+
+      .text-detail {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.3px;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+//Form supplier
+@media (max-width: 576px) {
+  .form-row {
+    margin-bottom: 0px;
+    row-gap: 30px !important;
+    .ant-row {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    .last-item {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .last-row {
+    margin-top: 25px;
+  }
+
+  .form-gender {
+    .ant-radio-group {
+      label {
+        margin-bottom: 25px;
+        display: block;
+        padding-left: 0px !important;
+      }
+
+      label:last-child {
+        margin-bottom: 15px;
+      }
+    }
+
+    height: auto !important;
+    margin-top: 30px;
+  }
+}
+
+.checkBox-margin {
+  margin-top: 34px;
+}
+
+.note {
+  textarea {
+    min-height: 197px !important;
+  }
+}
+
+.btn-add {
+  min-width: 109px !important;
+}
+
+.title-group {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.fnb-input-with-count .ant-input-suffix {
+  line-height: 21px !important;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.fnb-card {
+  .ant-card-body {
+    padding-bottom: 10px;
+  }
+}
+
+.form-gender {
+  display: block;
+  height: 60px;
+
+  .ant-form-item-control {
+    margin: auto;
+  }
+}
+
+.last-gender-option {
+  padding-left: 80px !important;
+}
+
+.btn-edit-supplier {
+  min-width: 117px !important;
+}
+
+.last-item {
+  .ant-form-item-explain-error {
+    position: inherit;
+  }
+}

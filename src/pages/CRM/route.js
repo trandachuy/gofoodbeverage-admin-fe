@@ -1,0 +1,161 @@
+import CustomerManagement from "pages/CRM/customer/customer-management/customer.page";
+import ListCustomerSegment from "pages/CRM/customer-segment/list-customer-segment/list-customer-segment.page";
+import CreateCustomerSegment from "pages/CRM/customer-segment/create-customer-segment";
+import UpdateCustomerSegment from "pages/CRM/customer-segment/update-customer-segment";
+import { PermissionKeys } from "constants/permission-key.constants";
+import CreateCustomerPage from "pages/CRM/customer/create-customer/create-customer.page";
+import UpdateCustomerPage from "pages/CRM/customer/edit-customer";
+import DetailCustomerPage from "pages/CRM/customer/detail-customer";
+import CustomerMembershipManagement from "pages/CRM/membership/membership-management/customer-membership.page";
+import CreateCustomerMembershipPage from "pages/CRM/membership/create-membership";
+import EditCustomerMembershipPage from "pages/CRM/membership/update-membership";
+import LoyaltyPointConfigurationPage from "./loyalty-point";
+import { GroupFill } from "constants/icons.constants";
+import i18n from "utils/i18n";
+const { t } = i18n;
+
+const route = {
+  key: "app.crm",
+  position: 3,
+  path: "#",
+  icon: <GroupFill />,
+  name: t("menu.crm"),
+  isMenu: true,
+  exact: true,
+  auth: true,
+  child: [
+    {
+      key: "app.customer.management",
+      position: 3,
+      path: "/customer/management",
+      name: t("menu.crmManagement.customer"),
+      isMenu: true,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.VIEW_CUSTOMER,
+      component: CustomerManagement,
+      child: [],
+    },
+    {
+      key: "app.customer.segment",
+      position: 3,
+      path: "/customer/segment",
+      name: t("menu.crmManagement.customerSegment"),
+      isMenu: true,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.VIEW_SEGMENT,
+      component: ListCustomerSegment,
+      child: [],
+    },
+    {
+      key: "app.customer.segment",
+      position: 3,
+      path: "/customer/segment/create-new",
+      name: "Create New Customer Segment",
+      isMenu: false,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.CREATE_SEGMENT,
+      component: CreateCustomerSegment,
+      child: [],
+    },
+    {
+      key: "app.customer.segment.edit",
+      position: 3,
+      path: "/customer/segment/edit/:customerSegmentId",
+      name: "Edit Customer Segment",
+      isMenu: false,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.EDIT_SEGMENT,
+      component: UpdateCustomerSegment,
+      child: [],
+    },
+    {
+      key: "app.customer.create",
+      position: 3,
+      path: "/customer/create-new",
+      name: "CustomerCreate",
+      isMenu: false,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.CREATE_CUSTOMER,
+      component: CreateCustomerPage,
+      child: [],
+    },
+    {
+      key: "app.customer.edit",
+      position: 3,
+      path: "/customer/edit/:customerId",
+      name: "CustomerEdit",
+      isMenu: false,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.EDIT_CUSTOMER,
+      component: UpdateCustomerPage,
+      child: [],
+    },
+    {
+      key: "app.customer.detail",
+      position: 3,
+      path: "/customer/detail/:customerId",
+      name: "CustomerDetail",
+      isMenu: false,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.VIEW_CUSTOMER,
+      component: DetailCustomerPage,
+      child: [],
+    },
+    {
+      key: "app.customer.membership",
+      position: 3,
+      path: "/membership/management",
+      name: t("menu.crmManagement.membership"),
+      isMenu: true,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.VIEW_MEMBERSHIP_LEVEL,
+      component: CustomerMembershipManagement,
+      child: [],
+    },
+    {
+      key: "app.customer.membership",
+      position: 3,
+      path: "/membership/create",
+      name: "MembershipCreate",
+      isMenu: false,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.CREATE_MEMBERSHIP_LEVEL,
+      component: CreateCustomerMembershipPage,
+      child: [],
+    },
+    {
+      key: "app.customer.membership.edit",
+      position: 3,
+      path: "/membership/edit/:membershipId",
+      name: "MembershipEdit",
+      isMenu: false,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.EDIT_MEMBERSHIP_LEVEL,
+      component: EditCustomerMembershipPage,
+      child: [],
+    },
+    {
+      key: "app.point.configuration",
+      position: 3,
+      path: "/customer/loyalty-point/configuration",
+      name: t("menu.crmManagement.pointConfiguration"),
+      isMenu: true,
+      exact: true,
+      auth: true,
+      permission: PermissionKeys.VIEW_LOYALTY_POINT,
+      component: LoyaltyPointConfigurationPage,
+      child: [],
+    },
+  ],
+};
+export default route;

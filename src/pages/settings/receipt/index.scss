@@ -1,0 +1,159 @@
+.receipt-card {
+
+    .receipt-config-card-header {
+        padding-top: 12px;
+
+        .card-title-name {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: #50429B;
+            ;
+        }
+
+        .card-button {
+            .print-preview {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                text-align: right;
+                letter-spacing: 0.3px;
+                color: #50429B;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .receipt-config-card-body {
+        margin-top: 25px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+
+        .receipt-form {
+            padding-left: 0px !important;
+            padding-right: 24px !important;
+
+            .wifi-password-lable {
+                margin-left: 34px;
+            }
+
+            .fnb-input {
+                margin-left: 34px;
+                width: calc(100% - 34px);
+            }
+
+            .button-upload-image {
+                .ant-form-item-explain {
+                    margin-left: 7px;
+                    height: 36px;
+                }
+            }
+
+            .ant-form-item-explain {
+                margin-left: 34px;
+                height: 36px;
+            }
+
+            .ant-form-horizontal {
+                padding-right: 24px;
+            }
+
+
+            .button-upload-image {
+                .ant-form-item-explain {
+                    margin-left: 17px;
+                }
+            }
+
+            .fileUploader {
+                margin-left: 5px;
+                height: 60px;
+
+                .fileContainer {
+                    box-shadow: none;
+                    margin: 0px;
+                    padding: 0px;
+                    flex-direction: row;
+                    justify-content: right;
+
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    button {
+                        height: 60px;
+                        background: #FF8C21;
+                        border-radius: 16px;
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 23px;
+                        letter-spacing: 0.3px;
+                        color: #FFFFFF;
+                        margin: 0px;
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .template-preview {
+
+            background-color: #F7F5FF;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .preview-bill-template {
+                margin-top: 68px;
+            }
+
+            .preview-text {
+                margin-top: 48px;
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                color: #50429B;
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .button-upload-image {
+        .btn-upload-image {
+            margin-left: 17px !important;
+
+            
+        }
+        .ant-form-item-explain {
+            margin-left: 33px !important;
+        }
+    }
+
+    .template-preview{
+        width: 298px;
+        .medium-template{
+            max-width: 265px;
+            margin: 39px 0px 39px 0px;
+        }
+
+        .small-template{
+            margin: 39px 0px 39px 0px;
+        }
+    }
+}

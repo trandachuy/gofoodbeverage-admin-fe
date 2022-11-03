@@ -1,0 +1,305 @@
+.input-search {
+  width: 425px;
+  height: 60px;
+  border-radius: 16px;
+}
+
+.modal-create-option,
+.modal-edit-option {
+  .ant-modal-header {
+    text-align: center;
+
+    .ant-modal-title {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    height: 120px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: #50429b;
+    padding-top: 40px;
+    padding-left: 22px;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ant-modal-content {
+    border-radius: 40px 40px 40px 40px;
+  }
+
+  .ant-card-head {
+    border: none;
+  }
+}
+
+.btn-add-option {
+  width: 160px;
+  height: 60px;
+}
+
+.icon-fill-btn-add-option {
+  border: 1px solid #fff;
+  background-color: #ff8c21 !important;
+  color: #fff !important;
+  border-radius: 4px;
+  width: 21px;
+  height: 21px;
+}
+
+.top-page {
+  display: flex;
+  align-items: center;
+
+  .title-page {
+    font-size: 32px;
+  }
+}
+
+.top-page-float-right {
+  justify-content: right;
+}
+
+.item-option {
+  height: 60px;
+  max-width: 250px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #ebedfd;
+
+  .ant-typography {
+    color: #000000 !important;
+    font-weight: 500;
+  }
+
+  .item-option-text {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden !important;
+  }
+}
+
+.item-option-full {
+  max-width: unset !important;
+  white-space: break-spaces;
+  color: #000000;
+  margin: 12px 12px 0 0;
+}
+
+.item-option-default {
+  border: 1px solid #9f99cc;
+  color: #50429b !important;
+  font-weight: 600;
+
+  .ant-typography {
+    color: #50429b !important;
+  }
+}
+
+div.ant-typography {
+  margin-bottom: unset !important;
+}
+
+.content-name {
+  display: inline-flex;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden !important;
+}
+
+.ant-tooltip-inner,
+.ant-tooltip-arrow-content {
+  background: #50429b !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+}
+
+.ant-tooltip-arrow-content {
+  --antd-arrow-background-color: linear-gradient(to right bottom, #50429b, #50429b);
+}
+
+.hidden {
+  display: none;
+}
+
+#hidden {
+  display: none;
+}
+
+.btn-add-option-level {
+  min-width: 222px;
+  height: 60px;
+  display: flex !important;
+  border: 1px solid #ff8c21 !important;
+  background: #f7f5ff !important;
+  color: #ff8c21 !important;
+
+  svg,
+  span {
+    margin: auto;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+}
+
+.margin-bottom-form-item {
+  margin-bottom: 14px;
+  margin-top: 19px;
+}
+
+.option-quota {
+  .ant-input-number-lg input {
+    height: 24px;
+  }
+
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+}
+
+.option-card {
+  margin-bottom: 8px;
+  margin-top: 39px;
+  border-radius: 12px;
+  background-color: #f7f5ff;
+  border: 1px solid #e5deff;
+}
+
+.icon-show-more-click {
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #50429b;
+  background: #50429b;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.icon-show-more:hover {
+  cursor: pointer;
+}
+
+.left-12 {
+  margin-left: 12px;
+  margin-top: 14px;
+}
+
+.group-icon-show-more {
+  margin-top: 14px;
+}
+
+.check-default-option-level {
+  margin-top: -42px;
+  position: absolute;
+  margin-left: -36px;
+  background: #f7f5ff !important;
+}
+
+.form-add-option-level-scroll {
+  max-height: 380px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.form-add-option-level-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-add-option-level-scroll::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.form-add-option-level-scroll::-webkit-scrollbar-thumb {
+  background: #50429b;
+  border-radius: 5px;
+}
+
+.form-add-option-level-scroll::-webkit-scrollbar-thumb:hover {
+  background: #817cba;
+}
+
+.card-option-level-margin {
+  margin-left: 12px;
+}
+
+.option-level-delete-icon {
+  float: right;
+  margin-top: 36px;
+  margin-right: 10px;
+}
+
+.option-level-action-btn {
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.option-level-delete-icon-quota {
+  float: right;
+  margin-top: 36px;
+  margin-right: 10px;
+}
+
+.btn-option-level-cancle {
+  width: 160x !important;
+  min-width: 160x !important;
+  border: 1px solid #a5abde !important;
+}
+
+.btn-option-level-add {
+  width: 160x !important;
+  min-width: 160x !important;
+  margin-left: 16px !important;
+}
+
+.option-level {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
+@media (max-width: 500px) {
+  .top-page-float-right {
+    justify-content: left;
+  }
+
+  .option-level-delete-icon {
+    margin-top: -92px;
+    margin-right: -223px;
+  }
+
+  .option-level-delete-icon-quota {
+    margin-top: -140px;
+    margin-right: -223px;
+  }
+
+  .btn-option-level-cancle {
+    width: 125px !important;
+    min-width: 125px !important;
+  }
+
+  .btn-option-level-add {
+    width: 125px !important;
+    min-width: 125px !important;
+    margin-left: 16px !important;
+  }
+
+  .form-add-option-level-scroll {
+    max-height: 382px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}

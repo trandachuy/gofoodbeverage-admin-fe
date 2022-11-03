@@ -1,0 +1,388 @@
+@mixin media-breakpoint($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+
+
+.c-login {
+    position             : relative;
+    background-image     : url(../../assets/images/bg.jpg);
+    min-height           : 100vh;
+    width                : 100%;
+    background-size      : cover;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+    overflow             : scroll;
+
+
+    .select-language-dropdown {
+        background   : #ffffff !important;
+        box-shadow   : 0px 2px 4px rgba(0, 0, 0, 0.25) !important;
+        border-radius: 12px !important;
+
+        div {
+            min-width : 200px !important;
+            overflow-x: hidden;
+        }
+
+        .ant-select-item-option {
+            font-style    : normal;
+            font-weight   : 400;
+            font-size     : 18px;
+            line-height   : 24px;
+            letter-spacing: 0.3px;
+            color         : #5a5a5a;
+            padding-left  : 10px;
+        }
+
+        .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+            color           : #817cba;
+            font-weight     : 600;
+            background-color: #ffffff;
+        }
+
+        .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+            background   : #f9fbff;
+            border-radius: 6px;
+            margin-left  : 5px;
+            margin-right : 5px;
+            padding-left : 5px;
+        }
+
+    }
+
+    .flag {
+        vertical-align: middle;
+    }
+
+    .content-bottom {
+        margin-top: 2px;
+        text-align: right;
+
+        .icon-content-bottom {
+            margin-left: 24px;
+        }
+    }
+
+    .login-contain {
+        position : absolute;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%, -50%);
+
+        .login-form {
+            width           : 528px;
+            border-radius   : 20px;
+            background-color: white;
+            box-shadow      : 0px 0px 40px rgba(32, 56, 85, 0.2);
+
+            &__header {
+                position     : relative;
+                $_height     : 300px;
+                $_logo_height: 150px;
+
+                &::before {
+                    content          : '';
+                    display          : block;
+                    background-repeat: no-repeat;
+                    background-image : url(../../assets/images/go-fnb-login-banner.png);
+                    width            : 100%;
+                    height           : $_height;
+
+                    border-radius: 20px 20px 0 0;
+
+                }
+
+                &::after {
+                    content          : '';
+                    display          : block;
+                    position         : absolute;
+                    background-repeat: no-repeat;
+                    background-size  : contain;
+                    background-image : url(../../assets/images/go-fnb-login-logo_2.png);
+                    top              : calc($_height / 2 - ($_logo_height / 2));
+                    left             : 50%;
+                    transform        : translateX(-50%);
+                    width            : 250px;
+                    height           : $_logo_height;
+                }
+            }
+
+            .frm-content {
+                padding: 0 32px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width  : 100%;
+                    height : 32px;
+                }
+            }
+
+            .label-login {
+                height        : 40px;
+                font-style    : normal;
+                font-weight   : 700;
+                font-size     : 32px;
+                line-height   : 40px;
+                letter-spacing: 0.3px;
+                color         : #323e40;
+                margin-bottom : 10px;
+            }
+
+            .label-input {
+                font-style    : normal;
+                font-weight   : 400;
+                font-size     : 20px;
+                line-height   : 24px;
+                letter-spacing: 0.3px;
+                color         : #121212;
+                opacity       : 0.5;
+                padding-bottom: 14px;
+                padding-top   : 14px;
+            }
+        }
+
+        .error-field {
+            height       : auto;
+            width        : 464px;
+            background   : #fff6ee;
+            border       : 1px solid #e47712;
+            border-radius: 8px;
+            margin-top   : 45px;
+            position     : absolute;
+
+            p {
+                font-family   : "Nunito";
+                margin-bottom : 0;
+                padding       : 12px 24px;
+                min-height    : 25px;
+                font-style    : normal;
+                font-weight   : 400;
+                font-size     : 18px;
+                line-height   : 25px;
+                letter-spacing: 0.3px;
+                color         : #e47712;
+            }
+        }
+
+        .form-lang {
+            justify-content: end;
+
+            .ant-select {
+                min-width: 140px;
+
+                .ant-select-selector:hover {
+                    box-shadow: none !important;
+                    border    : none !important;
+                }
+
+                .ant-select-selector {
+                    border: none;
+
+                    .ant-select-selection-item {
+                        font-style    : normal;
+                        font-weight   : 400;
+                        font-size     : 18px;
+                        letter-spacing: 0.3px;
+                        color         : #2b2162;
+                        min-width     : 132px;
+                        padding-left  : 16px;
+                        min-height    : 0 !important;
+                    }
+                }
+
+                .ant-select-arrow {
+                    -webkit-user-select: none;
+                    user-select        : all;
+                }
+            }
+
+            .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                border    : none;
+                box-shadow: none;
+                outline   : 0;
+            }
+        }
+
+        .ant-input-affix-wrapper {
+            border-radius: 16px;
+            background   : #ffffff;
+            box-shadow   : 0px 1px 4px rgba(0, 0, 0, 0.25);
+            height       : 60px;
+            border       : none;
+        }
+
+        .ant-input-affix-wrapper:hover {
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+            border    : none;
+        }
+
+        .ant-input-affix-wrapper:focus,
+        .ant-input-affix-wrapper-focused {
+            box-shadow: 0px 1px 4px #fc9434;
+            border    : none;
+        }
+
+        .ant-input-affix-wrapper-status-error,
+        .ant-input-affix-wrapper-status-error:hover {
+            border: 1px solid #ff0000;
+        }
+
+        .ant-input {
+            font-size: 18px;
+        }
+
+        .ant-input-prefix {
+            color    : #9f9f9f;
+            font-size: 18px;
+            padding  : 5px;
+        }
+
+        .ant-input-suffix {
+            color    : #9f9f9f;
+            font-size: 18px;
+            padding  : 5px;
+        }
+
+        .ant-input:placeholder-shown {
+            font-style    : normal;
+            font-weight   : 400;
+            font-size     : 18px;
+            line-height   : 21px;
+            letter-spacing: 0.3px;
+            color         : #9f9f9f;
+        }
+
+        .ant-form-item-explain {
+            margin-top: 5px;
+
+            .ant-form-item-explain-error {
+                font-style    : normal;
+                font-weight   : 400;
+                font-size     : 16px;
+                line-height   : 20px;
+                letter-spacing: 0.3px;
+                color         : #ff0000;
+                padding-top   : 8px;
+                position      : absolute !important;
+            }
+        }
+
+        .ant-btn {
+            border-radius : 12px;
+            background    : #50429b;
+            letter-spacing: 0.3px;
+            height        : 68px;
+            font-size     : 24px;
+            line-height   : 36px;
+            font-weight   : 500;
+            font-style    : normal;
+        }
+    }
+
+    .forgot-password {
+        justify-content: right;
+        padding-bottom : 16px;
+    }
+
+    .login-form-forgot {
+        float         : right;
+        font-style    : normal;
+        font-weight   : 400;
+        font-size     : 16px;
+        line-height   : 21px;
+        text-align    : right;
+        letter-spacing: 0.3px;
+        color         : #5a5a5a;
+        margin-top    : 16px;
+        text-align    : right;
+    }
+
+    .login-form-button {
+        width        : 100%;
+        border-radius: 12px;
+        height       : 40px;
+    }
+
+    .text-register {
+        font-style    : normal;
+        font-weight   : 400;
+        font-size     : 16px;
+        line-height   : 20px;
+        letter-spacing: 0.3px;
+        color         : #5a5a5a;
+        text-align    : center;
+    }
+
+    .link-register {
+        color      : #50429b;
+        font-weight: 700;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition         : all 5000s ease-in-out 0s;
+        transition-property: background-color, color;
+    }
+
+    /*Change text in autofill textbox*/
+    input:-webkit-autofill {
+        -webkit-text-fill-color: #121212 !important;
+    }
+
+    @include media-breakpoint(896px) {
+        width           : 100vw;
+        background-image: none;
+        overflow-x        : hidden;
+        overflow-y: scroll;
+
+        .login-contain {
+            position: relative;
+            width   : 100vw;
+        }
+
+        .login-form {
+            width        : 100% !important;
+            height       : 100vh !important;
+            border-radius: 0 !important;
+            margin       : auto !important;
+            box-shadow: none !important;
+
+            &__header {
+                $_height     : 300px;
+                $_logo_height: 150px;
+
+                &::before {
+                    content          : '';
+                    display          : block;
+                    background-repeat: no-repeat;
+                    background-image : url(../../assets/images/go-fnb-login-banner.png);
+                    width            : 100vw !important;
+                    height           : $_height;
+                    background-size  : cover;
+                }
+
+                &::after {
+                    content          : '';
+                    display          : block;
+                    position         : absolute;
+                    background-repeat: no-repeat;
+                    background-size  : contain;
+                    background-image : url(../../assets/images/go-fnb-login-logo_2.png);
+                    top              : calc($_height / 2 - ($_logo_height / 2));
+                    left             : 50%;
+                    transform        : translateX(-50%);
+                    width            : 250px;
+                    height           : $_logo_height;
+                }
+            }
+        }
+
+    }
+}

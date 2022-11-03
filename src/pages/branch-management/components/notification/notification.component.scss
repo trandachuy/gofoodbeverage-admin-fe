@@ -1,0 +1,164 @@
+.modal-notification {
+  .ant-modal-content {
+    //background-color: #fff;
+    border-radius: 40px;
+
+    background-image: linear-gradient(#e4dffa, #ffffff, #ffffff, #ffffff);
+
+    .ant-modal-body {
+      background-image: url("/assets/icons/cloud-mini.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: right 21%;
+
+      .icon {
+        display: flex;
+        position: absolute;
+        top: -80px;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #50429b;
+        text-align: center;
+
+        margin-top: 100px;
+      }
+      .dear-text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000;
+        text-align: center;
+      }
+      .your-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+        display: inline-grid;
+        font-family: "Plus Jakarta Sans";
+        line-height: 36px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+
+        span:first-child {
+          padding-bottom: 15px;
+        }
+      }
+      .please-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: #000;
+        text-align: center;
+      }
+      .contact-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000;
+        text-align: center;
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      .img-notification {
+        display: flex;
+        position: relative;
+
+        svg {
+          position: fixed;
+          top: 22px;
+        }
+      }
+
+      .btn-ignore {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: right;
+        letter-spacing: 0.3px;
+        color: #a5abde;
+        min-width: 108px;
+        display: inline-flex;
+        margin-right: 7px;
+
+        border: 1px solid #a5abde;
+        background: #ffffff;
+        border-radius: 16px;
+        span {
+          margin: auto;
+        }
+      }
+
+      .btn-upgrade {
+        background-color: #ff8c21;
+        border-radius: 16px;
+        color: #fff;
+        margin: 9px auto 12px;
+        background: #ff8c21;
+        border-radius: 16px;
+        min-width: 122px;
+
+        margin-left: 7px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .modal-notification {
+    padding-left: 20px;
+    padding-right: 20px !important;
+  }
+
+  .modal-notification .ant-modal-content .ant-modal-body .your-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .modal-notification .ant-modal-content .ant-modal-body .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 80px;
+  }
+
+  .modal-notification .ant-modal-content .ant-modal-body .icon {
+    top: -90px;
+    svg {
+      width: 180px;
+    }
+  }
+
+  .modal-notification .ant-modal-content .ant-modal-body .btn-ignore,
+  .modal-notification .ant-modal-content .ant-modal-body .btn-upgrade {
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .modal-notification .ant-modal-content .ant-modal-body .btn-upgrade {
+    margin-left: 15px;
+  }
+}

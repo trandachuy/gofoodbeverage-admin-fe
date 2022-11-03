@@ -1,0 +1,29 @@
+.mm40x25 {
+    width: 151.18110236px;
+    height: 94.488188976px;
+}
+
+.mm50x30 {
+    width: 188.97637795px;
+    height: 113.38582677px;
+}
+
+.mm50x40 {
+    width: 188.97637795px;
+    height: 151.18110236px;
+}
+
+.template-stamp {
+    border: 1px solid #aaa;
+    font-size: 11px;
+    margin: 0 auto;
+}
+
+.template-stamp > tr > td {
+    padding: 1px;
+}
+
+.div-vertically {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+.account-subscription {
+  .package-option-card {
+    min-width: 30%;
+  }
+  .package-selected {
+    min-width: 330px;
+    .platform-name {
+      color: #ffffff;
+    }
+    .pricing-selected {
+      width: 230px;
+      p {
+        margin: auto;
+      }
+    }
+  }
+
+  .permission-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+  }
+}

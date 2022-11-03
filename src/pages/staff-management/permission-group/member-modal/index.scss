@@ -1,0 +1,43 @@
+.form-modal {
+  .ant-modal-content {
+    border-radius: 20px;
+    .ant-row {
+      display: contents;
+      text-align: center;
+    }
+
+    .input-search {
+      border-radius: 20px;
+      width: 80%;
+      margin-left: 10%;
+    }
+    .tabel-member {
+      width: 90%;
+      margin-top: 40px;
+      margin-left: 5%;
+
+      .ant-table-thead {
+        .th-td-center {
+          text-align: center;
+          .icon-del {
+            font-size: 18px;
+            color: red;
+          }
+        }
+        .th-center {
+          text-align: center;
+        }
+      }
+
+      .ant-table-tbody {
+        .th-td-center {
+          text-align: center;
+          .icon-del {
+            font-size: 18px;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

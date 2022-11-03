@@ -1,0 +1,53 @@
+.page-coming-soon {
+    width: 100%;
+    .page-background {
+        background-image: url(../../assets/coming-soon/back-groud.png);
+        background-color: #E2E5FE;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .version-image {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        .version-text {
+            position: absolute;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 68px;
+            color: #50429B;
+            width: 100%;
+            max-width: fit-content;
+            top: 72%;
+            text-shadow:
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 10px,
+                #FFFFFF 1px 0 15px,
+                #FFFFFF 1px 0 15px,
+                #FFFFFF 1px 0 15px,
+                #FFFFFF 1px 0 15px,
+                #FFFFFF 1px 0 15px,
+                #FFFFFF 1px 0 15px,
+                #FFFFFF 1px 0 15px,
+                #FFFFFF 1px 0 15px,
+        }
+    }
+}

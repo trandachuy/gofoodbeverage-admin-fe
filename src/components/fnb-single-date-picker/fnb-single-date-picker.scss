@@ -1,0 +1,434 @@
+.fnb-single-date-picker-calendar {
+    .ant-picker-panel-container {
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+
+        .ant-picker-date-panel {
+            width: 353px;
+            height: 353px;
+
+            .ant-picker-header {
+                height: 60px;
+                background: #FFFFFF !important;
+                border-bottom: 0px;
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: #000000;
+                }
+
+                .ant-picker-header-view button {
+                    color: #000000;
+                    width: 50px;
+                }
+
+                .ant-picker-header-view > button:hover{
+                    color: #50429B !important;
+                    background: #F8F7FA;
+                    border-radius: 8px;
+                    width: 50px;
+                }
+            }
+
+            .ant-picker-header > button:hover{
+                color: #000000 !important;
+            }
+
+            .ant-picker-body {
+                height: 288px;
+
+                .ant-picker-content {
+                    width: 330px;
+
+                    thead {
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #19181A;
+                        font-weight: 600;
+                    }
+
+                    tbody {
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #19181A;
+
+                        tr {
+                            height: 40px;
+                        }
+
+                        .ant-picker-cell-today {
+                            .ant-picker-cell-inner {
+                                font-weight: 400;
+                                color: #50429B;
+                                background: #F8F7FA;
+                                border-radius: 50%;
+                                width: 35px;
+                                height: 35px;
+                                line-height: 35px;
+                            }
+                        }
+
+                        .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+                            border: 0px;
+                        }
+
+                        .ant-picker-cell {
+                            .ant-picker-cell-inner {
+                                font-weight: 400;
+                                width: 35px;
+                                height: 35px;
+                                line-height: 35px;
+                                border: 0px;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .ant-picker-cell-in-view.ant-picker-cell .ant-picker-cell-inner::before {
+                            border: 0px;
+                        }
+
+                        .ant-picker-cell-selected{
+                            .ant-picker-cell-inner{
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        .ant-picker-cell > .ant-picker-cell-inner:hover{
+                            color: #50429B;
+                        }
+
+                        .ant-picker-cell-selected > .ant-picker-cell-inner:hover{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ant-picker-month-panel{
+            width: 353px;
+            height: 353px;
+
+            .ant-picker-header {
+                height: 60px;
+                background: #FFFFFF !important;
+                border-bottom: 0px;
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: #000000;
+                }
+
+                .ant-picker-header-view button {
+                    color: #000000;
+                    width: 50px;
+                }
+
+                .ant-picker-header-view > button:hover{
+                    color: #50429B !important;
+                    background: #F8F7FA;
+                    border-radius: 8px;
+                    width: 50px;
+                }
+            }
+
+            .ant-picker-content {
+                width: 330px;
+
+                thead {
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #19181A;
+                    font-weight: 600;
+                }
+
+                tbody {
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #19181A;
+
+                    tr {
+                        height: 40px;
+                    }
+
+                    .ant-picker-cell-today {
+                        .ant-picker-cell-inner {
+                            font-weight: 400;
+                            color: #50429B;
+                            background: #F8F7FA;
+                            width: 50px;
+                            height: 31px;
+                            line-height: 31px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+                        border: 0px;
+                    }
+
+                    .ant-picker-cell {
+                        .ant-picker-cell-inner {
+                            font-weight: 400;
+                            width: 50px;
+                            height: 31px;
+                            line-height: 31px;
+                            border: 0px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .ant-picker-cell-in-view.ant-picker-cell .ant-picker-cell-inner::before {
+                        border: 0px;
+                    }
+
+                    .ant-picker-cell-selected{
+                        .ant-picker-cell-inner{
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .ant-picker-cell > .ant-picker-cell-inner:hover{
+                        color: #50429B;
+                    }
+
+                    .ant-picker-cell-selected > .ant-picker-cell-inner:hover{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .ant-picker-year-panel{
+            width: 353px;
+            height: 353px;
+
+            .ant-picker-header {
+                height: 60px;
+                background: #FFFFFF !important;
+                border-bottom: 0px;
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: #000000;
+                }
+
+                .ant-picker-header-view button {
+                    color: #000000;
+                }
+
+                .ant-picker-header-view > button:hover{
+                    color: #50429B !important;
+                    background: #F8F7FA;
+                    border-radius: 8px;
+                    width: 120px;
+                }
+            }
+
+            .ant-picker-content {
+                width: 330px;
+
+                thead {
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #19181A;
+                    font-weight: 600;
+                }
+
+                tbody {
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #19181A;
+
+                    tr {
+                        height: 40px;
+                    }
+
+                    .ant-picker-cell-today {
+                        .ant-picker-cell-inner {
+                            font-weight: 400;
+                            color: #50429B;
+                            background: #F8F7FA;
+                            width: 70px;
+                            height: 31px;
+                            line-height: 31px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+                        border: 0px;
+                    }
+
+                    .ant-picker-cell {
+                        .ant-picker-cell-inner {
+                            font-weight: 400;
+                            width: 70px;
+                            height: 31px;
+                            line-height: 31px;
+                            border: 0px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .ant-picker-cell-in-view.ant-picker-cell .ant-picker-cell-inner::before {
+                        border: 0px;
+                    }
+
+                    .ant-picker-cell-selected{
+                        .ant-picker-cell-inner{
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .ant-picker-cell > .ant-picker-cell-inner:hover{
+                        color: #50429B;
+                    }
+
+                    .ant-picker-cell-selected > .ant-picker-cell-inner:hover{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .ant-picker-decade-panel{
+            width: 353px;
+            height: 353px;
+
+            .ant-picker-header {
+                height: 60px;
+                background: #FFFFFF !important;
+                border-bottom: 0px;
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: #000000;
+                }
+
+                .ant-picker-header-view button {
+                    color: #000000;
+                }
+
+                .ant-picker-header-view > button:hover{
+                    color: #50429B !important;
+                    background: #F8F7FA;
+                    border-radius: 8px;
+                    width: 120px;
+                }
+            }
+
+            .ant-picker-content {
+                width: 330px;
+
+                thead {
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #19181A;
+                    font-weight: 600;
+                }
+
+                tbody {
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #19181A;
+
+                    tr {
+                        height: 40px;
+                    }
+
+                    .ant-picker-cell-today {
+                        .ant-picker-cell-inner {
+                            font-weight: 400;
+                            color: #50429B;
+                            background: #F8F7FA;
+                            height: 31px;
+                            line-height: 31px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+                        border: 0px;
+                    }
+
+                    .ant-picker-cell {
+                        .ant-picker-cell-inner {
+                            font-weight: 400;
+                            height: 31px;
+                            line-height: 31px;
+                            border: 0px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .ant-picker-cell-in-view.ant-picker-cell .ant-picker-cell-inner::before {
+                        border: 0px;
+                    }
+
+                    .ant-picker-cell-selected{
+                        .ant-picker-cell-inner{
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .ant-picker-cell > .ant-picker-cell-inner:hover{
+                        color: #50429B;
+                    }
+
+                    .ant-picker-cell-selected > .ant-picker-cell-inner:hover{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}

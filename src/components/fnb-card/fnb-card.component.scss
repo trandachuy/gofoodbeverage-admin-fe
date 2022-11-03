@@ -1,0 +1,40 @@
+.fnb-card {
+  .fnb-card-title {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2b2162;
+    margin-bottom: 10px;
+  }
+
+  .ant-form-item {
+    label {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #282828;
+      padding-bottom: 5px;
+      margin-top: 10px;
+    }
+  }
+
+  // add required signal
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+  }
+  // hide default required signal
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none;
+  }
+}

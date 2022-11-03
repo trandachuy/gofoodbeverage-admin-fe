@@ -1,0 +1,111 @@
+@import "/src/stylesheets/variable.scss";
+
+.trigger-footer {
+    width: 264px !important;
+    background: $color-white;
+    border-radius: 16px;
+    color: $color-light-purple-1;
+    margin: 24px;
+    display: flex;
+    transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.settings {
+    background-color: $color-F7F5FF;
+    width: 166px;
+    height: 57px!important;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-light-purple-1;
+    font-size: 20px;
+}
+.settings > span.icon-setting {
+    display: flex;
+}
+.settings > span.title-setting {
+    margin-left: 5px;
+}
+
+.icon-navigate {
+    background-color: $color-F7F5FF;
+    width: 74px;
+    height: 57px;
+    border-radius: 16px;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-navigate > span.icon-expand {
+    display: none;
+}
+.icon-navigate > span.icon-collapse {
+    display: block;
+}
+
+.trigger-footer > .settings.active {
+    background-color: $color-light-purple-1;
+    color: $color-white;
+}
+.trigger-footer > .settings:hover {
+    background-color: $color-light-purple-2;
+    color: $color-white;
+}
+.trigger-footer > .icon-navigate:hover {
+    background-color: $color-light-purple-2;
+    color: $color-white;
+}
+//Icon color
+.ant-layout-sider-trigger > .trigger-footer > .settings > .icon-setting > svg > path,
+.ant-layout-sider-trigger > .trigger-footer > .settings.active > .icon-setting > svg > path {
+    fill: $color-light-purple-1;
+}
+.ant-layout-sider-trigger > .trigger-footer > .icon-navigate:hover > span,
+.ant-layout-sider-trigger > .trigger-footer > .settings.active > .icon-setting,
+.trigger-footer > a.settings:hover > .icon-setting {
+    svg > path {
+        fill: $color-white;
+    }
+}
+
+aside.ant-layout-sider-collapsed {
+    .trigger-footer {
+        width: 121px!important;
+        height: 162px!important;
+        background: $color-white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ant-layout-sider-trigger {
+        height: 186px!important;
+    }
+    .settings {
+        background-color: $color-F7F5FF;
+        width: 121px;
+        margin-bottom: 24px;
+    }
+    .settings > span.title-setting {
+        display: none;
+    }
+
+    .icon-navigate {
+        background-color: $color-F7F5FF;
+        width: 121px;
+        margin-left: 0px;
+    }
+    .icon-navigate > .icon-expand {
+        display: block;
+    }
+    .icon-navigate > .icon-collapse {
+        display: none;
+    }
+}
+
+.ant-layout-sider-collapsed .ant-image-img {
+    width: 55%!important;
+}

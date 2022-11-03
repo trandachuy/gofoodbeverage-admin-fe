@@ -1,0 +1,18 @@
+.modal-customer-segment {
+  .ant-modal-close {
+    margin-top: 26px;
+    margin-right: 6px;
+  }
+}
+
+.table-customer-by-segment {
+  .text-name-overflow {
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .text-name {
+      color: #089bee;
+    }
+  }
+}

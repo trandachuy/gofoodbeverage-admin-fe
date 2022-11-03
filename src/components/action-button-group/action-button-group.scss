@@ -1,0 +1,107 @@
+.action-cancel {
+  color: #50429b !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+  font-style: normal;
+  letter-spacing: 0.3px !important;
+  min-width: unset !important;
+  border: none !important;
+  background-color: unset !important;
+}
+
+.action-activate {
+  color: #33b530 !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+  letter-spacing: 0.3px;
+}
+
+.action-activate:hover {
+  color: #227a20 !important;
+}
+
+.action-deactivate {
+  color: #f3b13e !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+  letter-spacing: 0.3px;
+}
+
+.action-deactivate:hover {
+  color: #c68618 !important;
+}
+
+.action-delete {
+  color: #ed4c5c !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  min-width: unset !important;
+  border: none !important;
+}
+
+.action-delete:hover {
+  color: #c1071a !important;
+}
+
+.revert-order-item {
+  display: flex;
+  flex-direction: row-reverse;
+  .ant-space-item {
+    padding-left: 24px;
+  }
+}
+
+.dropdown-action {
+  width: 120px;
+  border-radius: 8px !important;
+
+  .menu-action {
+    border-radius: 20px;
+  }
+  .ant-dropdown-menu-item.ant-dropdown-menu-item-only-child.menu-action {
+    border-radius: 0px !important;
+    padding: 12px 8px;
+    text-align: left;
+  }
+}
+
+.dropdown-box {
+  border-radius: 4px !important;
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  .dropdown-box-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #a5abde;
+  }
+}
+
+.action-review {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.3px;
+  color: #50429b !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}

@@ -1,0 +1,53 @@
+.fnb-input-customize {
+  height: 60px;
+  font-size: 18px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 12px;
+  padding-left: 16px;
+
+  input {
+    height: 100% !important;
+    background: none;
+    box-shadow: none;
+    border: none !important;
+  }
+
+  .ant-input {
+    font-size: 18px;
+  }
+
+  .ant-input:placeholder-shown {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #9f9f9f;
+  }
+
+  .ant-input-prefix {
+    color: #9f9f9f;
+    font-size: 18px;
+    padding-right: 5px;
+  }
+
+  .ant-input-suffix {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.3px;
+    color: #9f9f9f;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 740px) {
+  .fnb-input-customize {
+    height: 48px;
+    font-size: 16px; 
+  }
+}

@@ -1,0 +1,94 @@
+.form-staff {
+  .input-search-size {
+    width: 425px;
+  }
+
+  .form-table {
+    width: 100%;
+  }
+}
+
+.staff-card-border {
+  border-radius: 0px 16px 16px 16px !important;
+}
+
+.action-add-new-button {
+  position: absolute;
+  right: 0
+}
+
+.new-permission-group-format {
+  link-back-page {
+    width: 209px;
+    height: 19px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    color: #868686;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .link:hover {
+    cursor: pointer;
+  }
+
+  .ant-collapse {
+    border-radius: 12px;
+    background: #F7F5FF;
+    margin-top: 44px;
+  }
+
+  .ant-collapse-header {
+    height: 88px;
+  }
+
+  .ant-collapse>.ant-collapse-item:last-child,
+  .ant-collapse>.ant-collapse-item:last-child>.ant-collapse-header {
+    border-radius: 12px;
+  }
+
+  .ant-collapse-content {
+    margin: 18px;
+    border-radius: 12px !important;
+  }
+
+  .ant-collapse-content>.ant-collapse-content-box {
+    padding-left: 57px;
+  }
+
+  .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-card {
+    border-radius: 12px;
+    background: #F7F5FF;
+  }
+}
+
+.add-new-permission-group-button {
+    position: absolute;
+    right: 25px;
+    top: 105px;
+}
+
+.card-collapse-header {
+  .ant-collapse-header-text {
+    flex: initial !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .action-add-new-button {
+    position: relative;
+  }
+
+  .add-new-staff-button {
+    display: none;
+  }
+}

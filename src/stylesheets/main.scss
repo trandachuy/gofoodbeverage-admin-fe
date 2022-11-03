@@ -1,0 +1,111 @@
+// @import "antd/dist/antd.css";
+html {
+  scroll-behavior: smooth;
+}
+
+.icon-edit {
+  font-size: 18px;
+  color: #135200 !important;
+}
+
+.icon-del {
+  font-size: 18px;
+  color: red !important;
+}
+
+.d-flex {
+  display: inline-flex !important;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-flex-right {
+  display: inline-flex !important;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.form-filter-popover {
+  width: 350px;
+  .form-select {
+    width: 200px;
+  }
+}
+
+.color-primary {
+  color: #2d9aff !important;
+}
+
+.color-orange {
+  color: #fff !important;
+  background-color: orange !important;
+}
+
+.activate-button {
+  color: #000 !important;
+  background-color: #f1c232 !important;
+}
+
+.activate-button:hover {
+  color: #fff !important;
+  background-color: #f1c232 !important;
+  cursor: pointer !important;
+}
+
+.color-gray {
+  color: gray !important;
+}
+
+.color-black {
+  color: black !important;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.pl-100px {
+  padding-left: 100px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-first-capitalize {
+  text-transform: lowercase;
+}
+
+.text-first-capitalize:first-letter {
+  text-transform: uppercase;
+}

@@ -1,0 +1,62 @@
+$header-background-color: #f9f8ff;
+.fnb-guideline {
+  max-width: fit-content !important;
+  .ant-tooltip-content {
+    .ant-tooltip-arrow {
+      .ant-tooltip-arrow-content {
+        --antd-arrow-background-color: linear-gradient(
+          to right bottom,
+          $header-background-color,
+          $header-background-color
+        );
+        background: $header-background-color !important;
+      }
+    }
+    .ant-tooltip-inner {
+      background: #fff !important;
+      background-origin: border-box;
+      padding: 0px;
+      border-radius: 16px !important;
+    }
+  }
+}
+
+.guideline-wrapper {
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 16px;
+
+  .guideline-header {
+    width: 100%;
+    height: 48px;
+    background-color: $header-background-color;
+    color: #50429b;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 12px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    .icon {
+      margin-right: 15px;
+    }
+  }
+
+  .guideline-content {
+    width: 100%;
+    padding: 12px 12px 1px 0px;
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+  }
+}

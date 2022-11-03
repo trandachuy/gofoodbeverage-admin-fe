@@ -1,0 +1,55 @@
+.fee-tax-setting-tabs {
+  .ant-tabs-nav {
+    height: 108px;
+    background: #ffffff;
+    border-radius: 16px;
+  }
+
+  .ant-tabs-nav-list {
+    display: inline-flex;
+  }
+
+  .ant-tabs-nav {
+    background-color: transparent !important;
+  }
+  .ant-tabs-nav-wrap {
+    padding-right: 24px;
+    height: 60px;
+    margin: auto 0;
+  }
+  .ant-tabs-tab {
+    width: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: #fff;
+    border-radius: 12px;
+    height: 100%;
+    text-transform: uppercase;
+
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+
+    color: #50429b;
+  }
+  .ant-tabs-tab {
+    background-color: #ffffff !important;
+  }
+  .ant-tabs-tab-active {
+    background: #50429b !important;
+
+    .ant-tabs-tab-btn {
+      color: white;
+    }
+  }
+  .ant-tabs-ink-bar {
+    background: none;
+  }
+}

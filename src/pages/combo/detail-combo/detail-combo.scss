@@ -1,0 +1,100 @@
+.display-block {
+    display: block;
+}
+.display-inline {
+    display: inline;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.card-first {
+    margin-bottom: 32px;
+}
+.line-through {
+    text-decoration: line-through;
+}
+
+.combo-name-title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #2B2162;
+}
+
+.combo-view-text {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #000000;
+}
+
+.combo-view-branch-select {
+    height: 60px;
+    line-height: 60px;
+    background: #F9F8FF;
+    border-radius: 16px;
+    padding: 0 16px;
+    margin: 12px 12px 12px 0px;
+}
+
+/*Group Combo Card*/
+.group-combo {
+    border-radius: 12px;
+    width: 100%;
+    height: 482px;
+    background-color: #fff;
+    border: 3px solid #F7F5FF;
+    .header-group-combo {
+        width: 100%;
+        height: 97px;
+        background-color: #F7F5FF;
+        .title-group {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 97px;
+            color: #000000;
+            margin-left: 24px;
+        }
+    }
+    .content-group-combo {
+        margin: 32px 24px;
+    }
+}
+
+/*Price*/
+.selling-price {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    
+}
+.selling-price-discount {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 20px;
+    color: #FF8C21;
+    .discount-icon {
+        margin-right: 10px;
+    }
+}
+
+.product-item{
+    display: inline-block;
+    background-color: #E8EAFF;
+    border-radius: 16px;
+    padding: 14px;
+    margin: 12px;
+}

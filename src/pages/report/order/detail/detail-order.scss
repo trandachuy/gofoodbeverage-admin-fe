@@ -1,0 +1,192 @@
+.order-detail-basic {
+  .order-detail-card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #50429b;
+    letter-spacing: 0.3px;
+  }
+
+  .label-left {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    // display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+
+    color: #000000;
+  }
+
+  .label-right {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: right;
+    text-align: right;
+    letter-spacing: 0.3px;
+
+    color: #000000;
+  }
+
+  .detail-general-card {
+    min-height: 520px !important;
+    .row-order-status {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .detail-customer-card {
+    min-height: 520px !important;
+    .row-customer-rank {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .order-delivery-card {
+      background: #f9f8ff;
+      border-radius: 16px 16px 16px 16px;
+    }
+    .accumulatedPoint {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #ff8c21;
+    }
+    .link-customer-detail {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #428bc1;
+    }
+
+    .order-report-customer-rank-wrapper {
+      float: right;
+      .order-report-customer-rank {
+        background-color: #efbb00;
+        border-radius: 16px;
+        padding: 7px 14px;
+        color: #fff;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        max-width: fit-content;
+      }
+    }
+  }
+}
+
+.order-detail-items {
+  .hr-dashed {
+    border: 1px dashed #9f9f9f;
+  }
+  .order-detail-card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #50429b;
+    letter-spacing: 0.3px;
+  }
+
+  .item {
+    &-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+    }
+
+    &-price-name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #858585;
+    }
+  }
+
+  .detail {
+    &-price {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+
+      color: #000000;
+    }
+  }
+}
+
+.sub-total {
+  background: #fbfbfb;
+  border-radius: 16px;
+  padding: 16px 14px;
+  font-weight: 400;
+  font-size: 24px;
+  .gross-total {
+    &-label,
+    &-data {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #000000;
+    }
+  }
+  .ant-collapse-header {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+  }
+
+  .shipping-panel {
+    .ant-collapse-header {
+      padding: 12px 0px;
+    }
+    .shipping-fee {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 21px;
+    }
+    .ant-collapse-content-box {
+      padding: 16px 0px 16px 16px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: #ffffff;
+    }
+  }
+
+  .total-amount {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #ff8c21;
+  }
+
+  .profit-amount {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.3px;
+    color: #50429b;
+  }
+  .tooltip-info {
+    color: #9f9f9f;
+  }
+}

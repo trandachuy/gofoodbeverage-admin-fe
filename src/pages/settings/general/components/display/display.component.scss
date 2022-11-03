@@ -1,0 +1,67 @@
+.setting-general-display {
+  .title {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .description {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #000000;
+  }
+
+  .logo,
+  .banner {
+    background-color: #ffffff;
+    border-radius: 30px;
+    min-height: 300px;
+    margin-bottom: 24px;
+  }
+
+  .logo {
+  }
+
+  .banner {
+    padding-top: 39px;
+    padding-left: 102px;
+    padding-bottom: 39px;
+
+    .banner__info {
+      margin-bottom: 60px;
+    }
+
+    .banner__upload {
+      display: flex;
+      justify-content: start;
+
+      .banner__upload__wrapper {
+        max-width: 666px;
+        max-height: 454px;
+
+        width: 666px;
+        height: 450px;
+
+        padding: 24px;
+
+        background: #f7f5ff;
+        border-radius: 30px;
+      }
+
+      .banner__upload__wrapper::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      .banner__upload__fullscreen,
+      .banner__upload__leftSide {
+        width: 50%;
+      }
+    }
+  }
+}

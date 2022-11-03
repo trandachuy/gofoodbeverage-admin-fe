@@ -1,0 +1,42 @@
+.delivery-method{
+    border-radius: 20px;
+    margin-right: 50px;
+    background-color: #FFFFFF !important;
+    .item-method {
+        border-radius: 20px;
+        align-items: center;
+        padding: 10px;
+        height: 60px;
+    }
+}
+
+.shipping-cost {
+    border-radius: 20px;
+    background-color: #FFFFFF !important;
+    .inputDistance {
+        margin-right: 10px;
+    }
+    .center-icon-del {
+        align-self: center;
+        float: right;
+        .icon-del {
+            color: red;
+        }
+    }
+    .radio-fee {
+        display: block;
+    }
+}
+
+.disable-form {
+    background-color: #d9d9d9;
+}
+
+.ahamove-card {
+    border-radius: 20px;
+    background-color: #FFFFFF !important;
+}
+
+.icon-bottom {
+    font-size: 30px;
+}

@@ -1,0 +1,60 @@
+.popover-filter-row {
+
+    .ant-col {
+        margin-bottom: 15px;
+    }
+
+    .ant-col>span {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #50429B;
+    }
+
+    .ant-col-18>div {
+        width: 100%;
+    }
+
+    .ant-col-18 div.ant-radio-group {
+        height: 50px;
+
+        label {
+            height: 60px;
+            padding: 14px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 16px !important;
+            margin-right: 16px;
+            margin-bottom: 16px;
+
+            span {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+
+        label::before {
+            background-color: transparent;
+        }
+    }
+
+    .ant-radio-button-wrapper-checked {
+        background-color: #50429B !important;
+    }
+}
+
+.reset-filter {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #50429B;
+}

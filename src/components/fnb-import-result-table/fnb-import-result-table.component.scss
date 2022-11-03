@@ -1,0 +1,19 @@
+.fnb-import-result-table {
+  .message-box-header {
+    margin-top: 34px;
+    margin-bottom: 32px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #db1b1b;
+    align-items: center;
+    display: flex;
+
+    .message-box-header-warning-icon {
+      margin-right: 12px;
+    }
+  }
+}

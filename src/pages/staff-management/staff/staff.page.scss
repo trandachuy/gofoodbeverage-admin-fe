@@ -1,0 +1,420 @@
+.btn-filter {
+  width: 122px;
+  height: 60px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  border-color: #ffffff;
+  border-radius: 12px !important;
+  background-color: #ffffff !important;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  .text-filter {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    align-self: flex-end;
+    color: #50429b;
+    font-style: normal;
+    font-family: "Plus Jakarta Sans";
+  }
+}
+
+.width-name {
+  width: 214px;
+}
+
+.width-phone {
+  width: 161px;
+}
+
+.width-branch {
+  width: 385px;
+}
+
+.width-group {
+  width: 351px;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.fnb-staff-add-box {
+  height: 60px !important;
+}
+
+.gender-control .ant-form-item-control {
+  margin-top: 15px;
+}
+
+.group-permission-item .ant-select-selection-overflow-item-suffix {
+  display: none;
+}
+
+.btn-remove-icon {
+  top: 15px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-remove-icon svg {
+  cursor: pointer;
+  color: #a5abde;
+  width: 28px;
+  height: 28px;
+}
+
+.select-all {
+  position: absolute;
+  right: 11px;
+  z-index: 1;
+}
+
+.select-all .ant-checkbox-wrapper > span:last-child {
+  padding-right: 0px;
+  font-size: 16px;
+}
+
+.staff-header-box {
+  margin-bottom: 32px;
+}
+
+.link-back-page-staff {
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.link-back-page-staff > button {
+  background: transparent;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+.lblTitle {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #2b2162;
+}
+
+.btn-back-icon {
+  margin-right: 8px;
+}
+
+.fnb-box > div.ant-card-body {
+  background: #ffffff;
+  border-radius: 12px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.fnb-box .ant-form-item-label > label {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.fnb-box .ant-form-item-control {
+  max-width: 725px;
+}
+
+.group-header-box {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.fnb-input input {
+  font-size: 18px;
+}
+
+.fnb-box .select-control {
+  width: 100%;
+  max-width: 676px;
+}
+
+.items-in-group-header-box {
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+.group-permission > div.ant-card-body {
+  padding-top: 0px;
+}
+
+.fnb-box .ant-row.ant-form-item {
+  margin-bottom: 32px;
+}
+
+div.current-tab-body > div.fnb-card > div.ant-card-body,
+div.current-tab-body > div.fnb-card > div.ant-card-body > div {
+  padding-top: 0px !important;
+}
+
+div.current-tab-body > div.fnb-card > div.ant-card-body > div {
+  margin-top: 0px !important;
+}
+
+.staff-form-filter-popover {
+  height: auto !important;
+  max-height: 528px !important;
+  width: 527px !important;
+  border-radius: 16px;
+  border: 0px;
+}
+
+.staff-form-filter-popover .staff-first-column {
+  width: 146px;
+  padding-right: 24px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #50429b;
+}
+
+.staff-form-filter-popover > div.ant-card-body > div.ant-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.staff-form-filter-popover .staff-second-column {
+  width: 333px;
+}
+
+.staff-second-column > div.ant-row.ant-form-item {
+  margin-bottom: 0px;
+}
+
+.staff-second-column div.ant-select {
+  width: 100%;
+}
+
+.staff-second-column div.ant-radio-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.staff-second-column div.ant-radio-group > label.ant-radio-button-wrapper {
+  height: 60px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  padding: 16px;
+  margin-right: 24px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(80, 66, 155, 0.25);
+  border-radius: 14px;
+}
+
+.staff-second-column
+  div.ant-radio-group
+  > label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+  background: #50429b;
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+.staff-second-column
+  div.ant-radio-group
+  > label.ant-radio-button-wrapper:not(:first-child)::before {
+  width: 0px;
+}
+.staff-second-column div.ant-radio-group > label.ant-radio-button-wrapper:last-child {
+  margin-right: 0px;
+}
+
+.staff-second-column label.ant-radio-button-wrapper > span:last-child > span.check-icon {
+  display: none;
+}
+
+.staff-second-column
+  label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked
+  > span:last-child
+  > span.check-icon {
+  display: inherit !important;
+}
+
+.clear-filter-container {
+  margin-bottom: 0px !important;
+}
+
+.clear-filter-container .btn-clear-filter {
+  width: 100%;
+}
+
+.sales-channel {
+  margin-bottom: 0px !important;
+}
+
+.ant-row.sales-channel > div.staff-second-column div.ant-radio-group.ant-radio-group-solid {
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.ant-row.sales-channel > div.staff-second-column .ant-radio-button-wrapper {
+  margin-bottom: 24px;
+}
+
+.product-grid tr > th {
+  font-weight: 700 !important;
+}
+.product-grid > div.filter-box > div > div:first-child {
+  display: none;
+}
+
+.product-grid .grid-product-name-column {
+  width: 607px;
+}
+
+.product-grid .grid-price-column {
+  width: 392px;
+}
+
+.product-grid .grid-channel-column {
+  width: 152px;
+}
+
+.product-grid .grid-status-column {
+  width: 159px;
+}
+
+.row-reset-filter {
+  float: right;
+}
+
+.reset-filter {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .row-reset-filter {
+    float: left;
+  }
+
+  .header-control {
+    float: left !important;
+    margin-top: 20px;
+  }
+  section.ant-layout.fnb-site-layout {
+    padding-right: 0px;
+  }
+  main.ant-layout-content.main-content-bg {
+    padding: 16px;
+  }
+
+  .btn-remove-icon {
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  div.fnb-box.group-permission div.group-header-box > .items-in-group-header-box {
+    flex-direction: column;
+  }
+  .select-all {
+    position: inherit;
+    margin-bottom: 15px;
+  }
+
+  .group-permission-item {
+    border: 1px solid #e5deff;
+    border-radius: 12px;
+    padding: 8px;
+  }
+}
+
+.add-new-staff-button {
+    position: absolute;
+    right: 25px;
+    top: 105px;
+}
+
+@media (min-width: 501px) and (max-width: 825px) {
+  div.fnb-box.group-permission div.group-header-box > .items-in-group-header-box {
+    flex-direction: column;
+  }
+
+  div.ant-row.group-header-box {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .fnb-box .ant-form-item-control {
+    max-width: 100% !important;
+  }
+
+  .fnb-box .select-control {
+    max-width: 100% !important;
+  }
+}
+
+//#region xxl: '(min-width: 1600px)',
+@media (max-width: 1600px) {
+  .fnb-btn-search-filter {
+    display: grid;
+    .btn-filter {
+      width: 122px;
+      height: 60px;
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none !important;
+      border-color: #ffffff;
+      border-radius: 12px !important;
+      background-color: #ffffff !important;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      .text-filter {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        align-self: flex-end;
+        color: #50429b;
+        font-style: normal;
+        font-family: "Plus Jakarta Sans";
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .fnb-btn-search-filter {
+    display: flex;
+  }
+}
+//#endregion

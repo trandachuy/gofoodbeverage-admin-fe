@@ -1,0 +1,470 @@
+.fnb-popver-picker {
+  .fnb-form-picker {
+    background-color: #FFFFFF;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex !important;
+
+    
+    .rdrDateDisplayWrapper {
+      display: none !important;
+    }
+
+    .rdrMonthAndYearWrapper {
+      align-items: center;
+      height: 30px;
+      padding-top: 0px;
+    }
+
+
+    .rdrMonthAndYearPickers{
+      justify-content: left;
+    }
+
+    .rdrMonthName {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #FFFFFF;
+      background-color: #50429B;
+      height: 40px;
+      border-radius: 16px;
+      margin-left: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rdrWeekDays {
+      .rdrWeekDay {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #19181A;
+      }
+    }
+
+    .rdrDay:not(.rdrDayPassive) .rdrInRange~.rdrDayNumber span,
+    .rdrDay:not(.rdrDayPassive) .rdrSelected~.rdrDayNumber span {
+      color: rgb(0 0 0 / 85%);
+    }
+
+    .rdrDay{
+      padding: 20px;
+      height: 40px;
+    }
+
+    .rdrDayNumber {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #19181A;
+      right: 5px;
+    }
+
+    .rdrDateRangeWrapper {
+      margin-top: 25px;
+
+
+      .rdrMonths {
+        margin-top: 16px;
+      }
+
+      .ant-select-selection-item {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #19181A;
+        align-items: center;
+        padding-top: 5px;
+        height: 40px;
+      }
+
+      .select-months{
+        width: 110px;
+      }
+
+      .select-years{
+        width: 100px;
+      }
+
+      .ant-select-focused:not(.ant-select-disable).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        background: #F8F7FA;
+        border-radius: 16px;
+        border-color: #FFFFFF;
+        box-shadow: none;
+        border-right-width: none;
+        outline: 0;
+        height: 40px;
+        align-items: center;
+        padding-top: 5px;
+        span{
+          color: #50429B;
+        }
+      }
+
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+        border: 0px;
+      }
+    }
+
+    .rdrStartEdge,
+    .rdrEndEdge {
+      height: 40px;
+      width: 40px;
+      top: 0px;
+      left: 0px;
+      background-color: #50429b;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      .rdrDayNumber {
+        span {
+          color: #f8f8f8;
+        }
+      }
+    }
+
+    .rdrInRange {
+      background-color: #eae7ff;
+    }
+
+    .rdrDayToday .rdrDayNumber span:after{
+      background: #50429b;
+      display: none;
+    }
+
+    .rdrDayToday {
+      background: #F8F7FA;
+      border-radius: 50%;
+      .rdrDayNumber span {
+        color: #50429b;
+      }
+    }
+
+    .rdrDayStartPreview,.rdrDayEndPreview{
+      color: #50429b !important;
+      height: 40px;
+      width: 40px;
+      top: 0px;
+      left: 0px;
+      border-radius: 50%;
+    }
+
+    .rdrDayInPreview{
+      color: #50429b !important;
+    }
+
+    .fnb-form-option-date {
+      display: inline-grid !important;
+      background-color: #fbfbfb;
+      border-radius: 16px 0px 0px 0px;
+      .ant-radio-group {
+        margin: 16px 8px 16px 8px;
+
+        .ant-radio-button-wrapper{
+          width: 142px;
+          background-color: #fbfbfb;      
+          border-right: none;  
+          border-radius: 8px; 
+        }
+
+        .ant-radio-button-wrapper.fnb-btn-date::before{
+          width: 0px;
+        }
+      }
+
+      .fnb-btn-date.ant-radio-button-wrapper-checked {
+        span {
+          color: #ffffff;
+        }
+      }
+
+      .fnb-btn-date {
+        height: 43px;       
+        border-color: #fbfbfb;
+        
+        align-items: center;
+        padding-left: 20px;
+        text-align: left;
+        display: flex;
+
+        .ant-radio-button-checked {
+          border-radius: 8px;
+          background-color: #50429b;
+        }
+
+        span {
+          color: #000000;
+          font-size: 18px;
+          font-family: "Plus Jakarta Sans";
+          text-align: center;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+
+      .fnb-btn-date:hover {
+        border-radius: 8px;
+        background-color: #50429b;
+        span{
+          color: #FFFFFF;
+        }
+      }
+
+      .fnb-btn-date-disable.ant-radio-button-wrapper-checked{
+        border-radius: 8px;
+        background-color: #50429b;
+      }
+    }
+
+    .fnb-form-picker {
+      display: inline-grid;
+    }
+  }
+}
+
+.fnb-popver-picker .fnb-form-picker .rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span{
+  color: #19181A;
+}
+
+
+.rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span, 
+.rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span{
+  color: #FFFFFF ;
+}
+
+
+
+.btn-date-picker {
+  width: 332px;
+  height: 60px;
+  padding: 0px !important;
+  border-radius: 12px;
+  display: flex !important;
+  border-color: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+
+  .fnb-btn-div-icon-calendar {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    margin-top: 9px;
+    margin-left: 16px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+  }
+
+  .fnb-div-text-date-time {
+    width: 215px;
+    padding-left: 15.57px;
+    align-self: end;
+
+    .fnb-text-date-time {
+      font-size: 18px;
+      font-family: "Plus Jakarta Sans";
+      color: #000000;
+      display: inherit;
+      overflow: hidden;
+      max-width: 210.43px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: initial;
+    }
+  }
+
+  .fnb-div-down {
+    width: 43.43px;
+    align-self: center;
+
+    .fnb-icon-down {
+      font-size: 1.5px;
+      color: #292d32;
+    }
+  }
+}
+
+.fnb-footer {
+  justify-content: end;
+  border: solid 1px white;
+  border-top-color: #efefef;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  .fnb-footer-div {
+    align-self: center;
+    margin-right: 20px;
+
+    .fnb-text-date {
+      font-size: 15px;
+      color: #000000;
+      font-family: "Plus Jakarta Sans";
+      align-self: center;
+      text-align: center;
+      display: contents;
+    }
+
+    .fnb-date-to-date-wrapper{
+      font-size: 15px;      
+      font-family: "Plus Jakarta Sans";
+
+      .fnb-text-start-date{
+        color: #000000;
+        margin-right: 15px;
+      }
+  
+      .fnb-text-to-date{
+        color: #979797;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .fnb-btn-cancel {
+    width: 153px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #d8d8d8;
+    color: #858585;
+  }
+
+  .fnb-btn-apply {
+    width: 153px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #ff8c21;
+    color: #f9f9f9;
+    font-family: "Plus Jakarta Sans";
+    margin-right: 28px;
+    margin-left: 19px;
+  }
+}
+
+.dropdown-months {
+  .ant-select-item {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #19181A;
+    margin: 0px 5px ;
+    border-radius: 8px;
+  }
+
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+    font-weight: 600;
+    color: #50429B;
+    background-color: #FFFFFF;
+  }
+
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled){
+    background-color: #50429B;
+    border-radius: 8px;
+    color: #FFFFFF;
+  }
+}
+
+.dropdown-years {
+  .ant-select-item {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #19181A;
+    margin: 0px 10px ;
+    border-radius: 8px;
+  }
+
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+    font-weight: 600;
+    color: #50429B;
+    background-color: #FFFFFF;
+  }
+
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled){
+    background-color: #50429B;
+    border-radius: 8px;
+    color: #FFFFFF;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .form-branch {
+    width: 332px;
+  }
+
+  .fnb-popver-picker {
+    width: 358px !important;
+
+    .fnb-form-picker {
+      width: 358px !important;
+      display: block !important;
+
+      .fnb-form-option-date {
+        .ant-radio-group {
+          display: flex;
+          width: 358px !important;
+          overflow-x: scroll;
+
+          .fnb-btn-date {
+            width: 138px;
+            height: 43px;
+
+            span {
+              width: 138px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .rdrDateRangeWrapper {
+        width: 358px !important;
+
+        .rdrMonths {
+          display: block !important;
+        }
+      }
+    }
+
+    .fnb-footer {
+      display: block;
+
+      .fnb-footer-div {
+        margin-left: 25px;
+        margin-bottom: 24px;
+      }
+
+      .fnb-form-btn {
+        display: flex;
+        justify-content: center;
+
+        .fnb-btn-cancel,
+        .fnb-btn-apply {
+          width: 145px;
+          height: 42px;
+        }
+      }
+    }
+  }
+
+  .fnb-popver-picker {
+    top: 350px !important;
+  }
+}

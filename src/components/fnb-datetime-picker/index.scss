@@ -1,0 +1,94 @@
+.fnb-date-time-picker {
+  width: 100%;
+  height: 60px;
+  border-radius: 16px;
+  box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+  
+  .ant-picker-input {
+    input {
+      font-size: 18px;
+      padding: 12px 16px;
+    }
+
+    .ant-picker-suffix {
+      padding-right: 16px;
+    }
+  }
+}
+
+.fnb-date-time-picker-dropdown {
+  font-size: 18px;
+  border-radius: 16px;
+
+  .ant-picker-cell-selected {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+    background-color: #50429B;
+  }
+
+  .ant-picker-cell-inner {
+    width: 25px;
+    border-color: #50429B;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ant-picker-panel-container {
+    border-radius: 16px;
+    .ant-picker-panel {
+      .ant-picker-footer {
+        display: none;
+        .ant-picker-ranges {
+          .ant-picker-ok {
+            button.ant-btn.ant-btn-primary.ant-btn-sm {
+              min-width: 80px !important;
+              height: 40px !important;       
+            }
+          }
+        }
+      }
+
+      .ant-picker-datetime-panel {
+        .ant-picker-date-panel {
+          .ant-picker-header {
+            background: #ffffff !important;
+            font-size: 18px;
+            border-bottom: unset;
+            .ant-picker-header-view {
+              .ant-picker-month-btn {
+                color: #50429B !important;
+              }
+            }           
+            padding: 0 30px !important;
+          }
+
+          .ant-picker-header * {
+            color: #000 !important;
+            font-weight: bold;
+          }
+
+          .ant-picker-header button:hover {
+            font-weight: bold !important;
+          }
+        }
+
+        .ant-picker-time-panel {
+          .ant-picker-header {            
+            background: #ffffff !important;
+            font-size: 18px;
+            border-bottom: unset;           
+            padding: 0 30px !important;
+          }
+
+          .ant-picker-header * {
+            color: #000 !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+} 

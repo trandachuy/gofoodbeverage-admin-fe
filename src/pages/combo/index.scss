@@ -1,0 +1,294 @@
+.height-col-product-price {
+  height: 40px;
+  align-content: center;
+  display: flex;
+}
+
+.product-in-combo-table {
+  .mb-2 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .grid-product-product-name-column {
+    min-width: 650px;
+  }
+
+  .flexible-product-and-price {
+    justify-content: center;
+    align-items: center;
+
+    .flexible-combo-price {
+      text-align: right;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .specific-product-and-price {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .specific-combo-price {
+      text-align: right;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .combo-name {
+    max-width: inherit;
+    padding-left: 12px;
+  }
+}
+
+.product-in-combo-table .btn-show-more {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 28.8px;
+  height: 28.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.product-in-combo-table .ant-popover-open {
+  background: #50429b;
+  border: 2px solid #50429b;
+  color: #ffffff;
+  border-radius: 16px;
+}
+
+.popover-container-custom {
+  width: 800px;
+  max-width: 800px;
+  max-height: 610px;
+  border-radius: 16px;
+  padding: 0px !important;
+}
+
+.popover-container-custom-header {
+  padding: 18px 24px;
+  background: #50429b;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.popover-container-custom-header-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.popover-container-custom-body {
+  background: #ffffff;
+  padding: 30px 24px;
+  max-height: 500px;
+  overflow-y: scroll;
+  border-radius: 16px;
+}
+
+.popover-container-custom-body::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.popover-container-custom-body::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+.popover-container-custom-body::-webkit-scrollbar-thumb {
+  background: #50429b;
+  border-radius: 2px;
+}
+
+.popover-container-custom-body::-webkit-scrollbar-thumb:hover {
+  background: #817cba;
+}
+
+.ant-popover-inner-content {
+  padding: 0px;
+  margin: 0px;
+}
+
+.popover-table {
+  table {
+    max-width: 721px !important;
+  }
+}
+
+.combo-form {
+  .combo-description-box {
+    height: 147px !important;
+  }
+
+  .combo-type-name {
+    font-size: 20px;
+  }
+}
+
+.combo-check-box-select-all-branch {
+  margin-top: -38px;
+  float: right;
+}
+
+.product-group-container {
+  border: 3px solid #f7f5ff;
+  border-radius: 20px;
+
+  .product-group-header {
+    height: 97px;
+    background: #f7f5ff;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .product-group-name {
+    margin-top: 32px;
+    margin-left: 25px;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  .product-group-delete-action {
+    margin-top: 32px;
+    margin-right: 25px;
+    margin-bottom: 32px;
+  }
+
+  .product-group-body {
+    margin-top: 32px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 32px;
+  }
+}
+
+.group-clearfix {
+  padding: 20px;
+}
+
+.ant-radio-wrapper {
+  span {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.table-product-combo-prices {
+  .discount-products-wrapper {
+    padding-top: 10px;
+
+    span {
+      color: #ff8c21;
+    }
+
+    .discount-icon-col {
+      padding-right: 10px;
+    }
+
+    .discount-percent-col {
+      padding-left: 10px;
+    }
+  }
+}
+
+.flexible-combo-by-group-of-items {
+  .flexible-combo-discount-icon {
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .flexible-combo-discount-percent {
+    span {
+      color: #ff8c21;
+      font-size: 20px;
+    }
+  }
+}
+
+.flexible-combo-wrapper {
+  background: #f7f5ff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: fit-content;
+}
+
+.popover-flexible-wrapper {
+  background: #f7f5ff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: fit-content;
+}
+
+.product-price-item {
+  display: inline-block;
+  background-color: #e8eaff;
+  border-radius: 16px;
+  padding: 13px 14px;
+  gap: 10px;
+  margin: 5px;
+}
+
+@media (max-width: 992px) {
+  .popover-container-custom {
+    width: 359px;
+  }
+
+  .popover-container-custom-body {
+    min-width: 359px;
+    max-height: 513px;
+    overflow-x: scroll;
+
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #50429b;
+      border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #817cba;
+    }
+  }
+
+  .product-in-combo-table {
+    table {
+      min-width: 1200px !important;
+    }
+  }
+
+  .popover-table {
+    table {
+      max-width: 721px !important;
+    }
+  }
+
+  .popover-container-custom-body {
+    .default-mode {
+      display: none !important;
+    }
+  }
+}

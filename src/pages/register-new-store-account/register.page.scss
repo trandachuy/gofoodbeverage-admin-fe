@@ -1,0 +1,332 @@
+
+
+.container-register {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  height: 100vh;
+  background-image: url(../../assets/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+
+  .ant-form-item-explain-error {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #ff0000;
+    margin-left: 40px !important;
+    padding-top: 8px;
+    position: absolute !important;
+  }
+
+  .form-logo {
+    flex: 1;
+    display: flex;
+    margin-left: 167px;
+    margin-top: 19vh;
+
+    .text-logo {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 101px;
+      letter-spacing: 0.3px;
+      color: #ffffff;
+    }
+  }
+
+  .form-register {
+    background-color: white;
+    width: 554px;
+    border-radius: 30px;
+    height: 684px;
+    margin: auto 136px auto;
+
+    .step {
+      margin-top: 48px;
+      position: absolute;
+      .step-box {
+        width: 554px;
+      }
+    }
+
+    .form-container {
+      height: 472px;
+      .label-register {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 21px;
+        letter-spacing: 0.3px;
+        color: #121212;
+        opacity: 0.5;
+      }
+
+      .form-input {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 14px;
+        width: 464px;
+        border-radius: 10px !important;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15) !important;
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+
+      .form-input:focus,
+      .form-input:focus-within {
+        box-shadow: 0px 0px 3px #50429b !important;
+        border-color: #ffffff !important;
+      }
+
+      .form-select-two-row {
+        width: 213px;
+      }
+
+      .form-select-three-row {
+        width: 128px;
+      }
+
+      .form-select {
+        width: 464px;
+      }
+
+      .header {
+        margin-top: 94px;
+        margin-left: 40px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+        color: #323e40;
+      }
+
+      .header-otp {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 0.3px;
+        color: #323e40;
+        margin-top: 89px;
+        margin-left: 40px;
+      }
+
+      .send-code-text {
+        margin: 74px 67px 0px 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #2b2162;
+        b {
+          font-weight: 700;
+        }
+      }
+
+      .resend-code-text {
+        margin: 40px 137px 0px 152px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #9f9f9f;
+        b {
+          font-size: 20px;
+          color: #50429b;
+          line-height: 30px;
+          font-weight: 700;
+        }
+      }
+
+      .otp-box-container {
+        margin: 40px 40px 0px 40px;
+        .input-otp {
+          width: 64px;
+          height: 64px;
+          background-color: #ffffff !important;
+          border: 1px solid #ffffff;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          padding: 24px;
+          .ant-input {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.text-bottom {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-top: 20px;
+  color: #50429b;
+  .text-link {
+    color: #50429b;
+  }
+}
+
+.awesome-text {
+  margin-top: 51px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #50429b;
+}
+
+.ready-text {
+  margin-top: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #50429b;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.phone-code {
+  font-size: 18px !important;
+}
+
+.button-start {
+  width: 474px !important;
+  margin-top: 40px !important;
+}
+
+.button-next.ant-btn {
+  border-radius: 10px;
+  background: #50429b;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 500;
+  width: 220px;
+  font-style: normal;
+  height: 76px;
+}
+
+.button-next.ant-btn-primary:hover,
+.button-next.ant-btn-primary:active,
+.button-next.ant-btn-primary:focus {
+  color: #ffffff;
+  border: #50429b;
+  background: #50429b;
+}
+
+.mt-34 {
+  margin-top: 34px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-13 {
+  margin-top: 13px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.icon-select-dropdown {
+  margin: 18px 5px;
+}
+
+.icon-select-dropdown-2 {
+  margin: 14px 2px;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+  background: #50429b;
+  width: 20px;
+  height: 20px;
+  top: -6px;
+  left: -5px !important;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+  background: #eeecf5;
+  width: 20px;
+  height: 20px;
+  top: -6px;
+  left: -5px !important;
+}
+
+.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+  background: #50429b;
+  width: 20px;
+  height: 20px;
+  top: -6px;
+  left: -5px !important;
+}
+
+.ant-steps-dot .ant-steps-item-tail,
+.ant-steps-dot.ant-steps-small .ant-steps-item-tail {
+  border-top: 1px dashed #eeecf5;
+}
+
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+  background: #50429b;
+}

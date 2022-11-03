@@ -1,0 +1,47 @@
+.qr-code-table {
+  .grid-status-column .status-active,
+  .grid-status-column .status-scheduled,
+  .grid-status-column .status-finished {
+    width: fit-content;
+    min-width: fit-content;
+    text-align: center;
+    padding: 6px 12px;
+  }
+  .discount-text,
+  .discount-max,
+  .start-text,
+  .end-text {
+    color: #9f9f9f;
+  }
+  .qr-action-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      margin-left: 15px;
+    }
+  }
+}
+
+.qr-code-filter {
+  overflow: hidden;
+  .ant-card-body .filter-popover-row {
+    width: 100%;
+    .first-column {
+      width: 30%;
+    }
+    .second-column {
+      width: 70%;
+    }
+  }
+  .form-filter-popover .filter-popover-row {
+    margin-bottom: 0px;
+  }
+  .form-filter-popover .first-column {
+    padding-right: 0px;
+  }
+  .form-filter-popover .second-column div.ant-radio-group > label.ant-radio-button-wrapper {
+    margin-bottom: 16px;
+    margin-right: 16px;
+  }
+}

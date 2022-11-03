@@ -1,0 +1,186 @@
+
+.fnb-steps {
+    box-sizing: border-box;
+    line-height: 1.5715;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    text-align: initial;
+
+    .fnb-steps-horizontal:not(.fnb-steps-label-vertical) .fnb-steps-item:first-child {
+        padding-left: 0;
+    }
+
+    .fnb-steps-horizontal:not(.fnb-steps-label-vertical) .fnb-steps-item {
+        padding-left: 16px;
+        white-space: nowrap;
+    }
+
+    .fnb-steps-item {
+        position: relative;
+        display: inline-block;
+        flex: 1;
+        overflow: hidden;
+        vertical-align: top;
+    }
+
+    .fnb-steps-item-finish .fnb-steps-item-icon,
+    .fnb-steps-item-finish .fnb-steps-item-icon-custom {
+        background-color: #fff;
+        border-color: #1890ff;
+    }
+
+    .fnb-steps-item-icon{
+        cursor: pointer;
+        min-width: 32px;
+        min-height: 32px;
+        margin: 0 8px 0 45%;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        line-height: 32px;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 32px;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .fnb-steps-item-icon-custom {
+        cursor: pointer;
+        min-width: 32px;
+        min-height: 32px;
+        margin: 0 10px 0 38%;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        line-height: 32px;
+        text-align: center;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .fnb-steps-item-icon, .fnb-steps-item-icon-custom, .fnb-steps-item-content {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .fnb-steps-item-finish > .fnb-steps-item-container > .fnb-steps-item-content > .fnb-steps-item-status {
+        color: rgba(0, 0, 0, 0.85);
+    }
+    
+    .fnb-steps-item-status {
+        position: relative;
+        display: inline-block;
+        padding-right: 16px;
+        padding-left: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .fnb-steps-item-finish > .fnb-steps-item-container > .fnb-steps-item-content > .fnb-steps-item-status::after,
+    .fnb-steps-item-finish > .fnb-steps-item-container > .fnb-steps-item-content > .fnb-steps-item-status::before {
+        background-color: #1890ff;
+        .fnb-steps-item-icon {
+            background-color: #1890ff;
+            border-color: #1890ff;
+            color: #1890ff;
+        }
+    }
+
+    .fnb-steps-item-process > .fnb-steps-item-container > .fnb-steps-item-content > .fnb-steps-item-status::before {
+        background-color: #1890ff;
+        .fnb-steps-item-icon {
+            background-color: #1890ff;
+            border-color: #1890ff;
+            color: #1890ff;
+        }
+    }
+
+    .fnb-steps-item-status::after {
+        position: absolute;
+        top: -5px;
+        left: 0px;
+        display: block;
+        width: 9999px;
+        height: 1px;
+        background: #f0f0f0;
+        content: '';
+    }
+
+    .fnb-steps-item-status::before {
+        position: absolute;
+        top: -5px;
+        right: 250%;
+        display: block;
+        width: 9999px;
+        height: 1px;
+        background: #f0f0f0;
+        content: '';
+    }
+
+    .fnb-steps-item:last-child {
+        .fnb-steps-item-status::after {
+            display: none;
+        }
+    }
+
+    .fnb-steps-item:first-child {
+        .fnb-steps-item-status::before {
+            display: none;
+        }
+    }
+
+    .fnb-steps-item-finish {
+        .fnb-steps-item-icon {
+            border-color: #1890ff;
+            color: #1890ff;
+        }
+    }
+
+    .fnb-steps-item-process {
+        .fnb-steps-item-icon {
+            background-color: #1890ff;
+            border-color: #1890ff;
+            color: #fff;
+        }
+    }
+    
+    .fnb-steps-item-finish > .fnb-steps-item-container > .fnb-steps-item-content > .fnb-steps-item-description {
+        color: rgba(0, 0, 0, 0.45);
+    }
+    
+    .fnb-steps-horizontal:not(.fnb-steps-label-vertical) .fnb-steps-item-description {
+        max-width: 140px;
+        white-space: normal;
+    }
+
+    .item-content {
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .fnb-steps-item.processing:last-child {
+        svg {
+            circle {
+                stroke: #50429B;
+                fill: #ffffff;
+            }
+
+            path {
+                fill: #50429B;
+            }
+        }
+    }
+
+    .fnb-steps-item-process{
+        svg {
+            circle {
+                stroke: #50429B !important;
+                fill: #ffffff !important;
+            }
+
+            path {
+                fill: #50429B !important;
+            }
+        }
+    }
+}

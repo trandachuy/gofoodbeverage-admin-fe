@@ -1,0 +1,108 @@
+.grid-no-column {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.grid-name-column {
+  .text-overflow {
+    width: 572px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .text-name {
+    color: #000000 !important;
+  }
+}
+
+.grid-total-column {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  .number-total {
+    color: #428bc1;
+    padding-left: 66px;
+  }
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.material-by-category-table,
+.selected-material-table {
+  table {
+    width: 740px !important;
+  }
+
+  .ant-table-body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+  }
+
+  .ant-table-body::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .ant-table-body::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+
+  .ant-table-body::-webkit-scrollbar-thumb {
+    background: #50429b;
+    border-radius: 2px;
+  }
+
+  .ant-table-body::-webkit-scrollbar-thumb:hover {
+    background: #817cba;
+  }
+}
+
+.selected-material-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.modal-create-material-category,
+.modal-edit-material-category,
+.modal-detail-material-category {
+  .ant-modal-header {
+    .ant-modal-title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #ffffff;
+      text-transform: capitalize;
+    }
+
+    height: 96px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: #50429b;
+    padding: 28px 32px;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ant-modal-content {
+    border-radius: 40px;
+  }
+
+  .ant-modal-body {
+    padding: 33px 30px 37px 30px;
+  }
+
+  .ant-card-head {
+    border: none;
+  }
+}

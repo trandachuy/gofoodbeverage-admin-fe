@@ -1,0 +1,72 @@
+.u-clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+.c-slider-management {
+    display: block;
+
+    .u-spaceing {
+        margin-top: 1.5rem;
+    }
+
+    .btn-add-file {
+        float: right;
+        height: 50px;
+    }
+
+}
+
+.c-full-slider {
+    
+}
+
+.c-drag-drop-box {
+
+    .drag-drop-box__input {
+        display: none;
+    }
+
+    .drag-drop-box__box {
+        position     : relative;
+        cursor       : pointer;
+        overflow     : hidden;
+        border       : 1px solid #50429b;
+        border-style : dashed;
+        border-radius: 5px;
+        min-height   : 120px;
+        animation    : all 1s ease-in-out;
+        transition   : color 0.25s;
+
+       
+        
+
+        &:hover {
+            border-style: solid;
+        }
+    }
+
+    .drag-drop-box__wrapper {
+        position       : absolute;
+        top            : 50%;
+        left           : 50%;
+        transform      : translate(-50%, -50%);
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        color          : #50429b;
+        font-size      : 14px;
+    }
+
+    .drag-drop-box__file-text {
+        margin-left: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 250px;
+    }
+
+    .drag-drop-box__icon {}
+}
